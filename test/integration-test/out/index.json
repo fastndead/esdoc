@@ -1,0 +1,4188 @@
+[
+  {
+    "__docId__": 0,
+    "kind": "file",
+    "name": "src/Abstract/Abstract.js",
+    "content": "export class TestAbstract {\n  /**\n   * @abstract\n   */\n  methodAbstract(){}\n}\n",
+    "static": true,
+    "longname": "/Users/aumbetov/Desktop/esdoc/test/integration-test/src/Abstract/Abstract.js",
+    "access": null,
+    "description": null,
+    "lineNumber": 1
+  },
+  {
+    "__docId__": 1,
+    "kind": "class",
+    "name": "TestAbstract",
+    "memberof": "src/Abstract/Abstract.js",
+    "static": true,
+    "longname": "src/Abstract/Abstract.js~TestAbstract",
+    "access": null,
+    "export": true,
+    "importPath": "esdoc-test/src/Abstract/Abstract.js",
+    "importStyle": "{TestAbstract}",
+    "description": null,
+    "lineNumber": 1,
+    "undocument": true,
+    "interface": false
+  },
+  {
+    "__docId__": 2,
+    "kind": "method",
+    "name": "methodAbstract",
+    "memberof": "src/Abstract/Abstract.js~TestAbstract",
+    "generator": false,
+    "async": false,
+    "static": false,
+    "longname": "src/Abstract/Abstract.js~TestAbstract#methodAbstract",
+    "access": null,
+    "description": "",
+    "lineNumber": 5,
+    "abstract": true
+  },
+  {
+    "__docId__": 3,
+    "kind": "file",
+    "name": "src/Access/Class.js",
+    "content": "/**\n * @public\n */\nexport default class TestAccessClassPublic {}\n\n/**\n * @protected\n */\nexport class TestAccessClassProtected {}\n\n/**\n * @package\n */\nexport class TestAccessClassPackage {}\n\n/**\n * @private\n */\nexport class TestAccessClassPrivate {}\n",
+    "static": true,
+    "longname": "/Users/aumbetov/Desktop/esdoc/test/integration-test/src/Access/Class.js",
+    "access": null,
+    "description": null,
+    "lineNumber": 1
+  },
+  {
+    "__docId__": 4,
+    "kind": "class",
+    "name": "TestAccessClassPublic",
+    "memberof": "src/Access/Class.js",
+    "static": true,
+    "longname": "src/Access/Class.js~TestAccessClassPublic",
+    "access": "public",
+    "export": true,
+    "importPath": "esdoc-test/src/Access/Class.js",
+    "importStyle": "TestAccessClassPublic",
+    "description": "",
+    "lineNumber": 4,
+    "interface": false
+  },
+  {
+    "__docId__": 5,
+    "kind": "class",
+    "name": "TestAccessClassProtected",
+    "memberof": "src/Access/Class.js",
+    "static": true,
+    "longname": "src/Access/Class.js~TestAccessClassProtected",
+    "access": "protected",
+    "export": true,
+    "importPath": "esdoc-test/src/Access/Class.js",
+    "importStyle": "{TestAccessClassProtected}",
+    "description": "",
+    "lineNumber": 9,
+    "interface": false
+  },
+  {
+    "__docId__": 6,
+    "kind": "class",
+    "name": "TestAccessClassPackage",
+    "memberof": "src/Access/Class.js",
+    "static": true,
+    "longname": "src/Access/Class.js~TestAccessClassPackage",
+    "access": "package",
+    "export": true,
+    "importPath": "esdoc-test/src/Access/Class.js",
+    "importStyle": "{TestAccessClassPackage}",
+    "description": "",
+    "lineNumber": 14,
+    "interface": false
+  },
+  {
+    "__docId__": 7,
+    "kind": "class",
+    "name": "TestAccessClassPrivate",
+    "memberof": "src/Access/Class.js",
+    "static": true,
+    "longname": "src/Access/Class.js~TestAccessClassPrivate",
+    "access": "private",
+    "export": true,
+    "importPath": "esdoc-test/src/Access/Class.js",
+    "importStyle": "{TestAccessClassPrivate}",
+    "description": "",
+    "lineNumber": 19,
+    "interface": false
+  },
+  {
+    "__docId__": 8,
+    "kind": "file",
+    "name": "src/Access/Function.js",
+    "content": "/**\n * @public\n */\nexport default function testAccessFunctionPublic(){}\n\n/**\n * @protected\n */\nexport function testAccessFunctionProtected(){}\n\n/**\n * @package\n */\nexport function testAccessFunctionPackage(){}\n\n/**\n * @private\n */\nexport function testAccessFunctionPrivate(){}\n",
+    "static": true,
+    "longname": "/Users/aumbetov/Desktop/esdoc/test/integration-test/src/Access/Function.js",
+    "access": null,
+    "description": null,
+    "lineNumber": 1
+  },
+  {
+    "__docId__": 9,
+    "kind": "function",
+    "name": "testAccessFunctionPublic",
+    "memberof": "src/Access/Function.js",
+    "generator": false,
+    "async": false,
+    "static": true,
+    "longname": "src/Access/Function.js~testAccessFunctionPublic",
+    "access": "public",
+    "export": true,
+    "importPath": "esdoc-test/src/Access/Function.js",
+    "importStyle": "testAccessFunctionPublic",
+    "description": "",
+    "lineNumber": 4
+  },
+  {
+    "__docId__": 10,
+    "kind": "function",
+    "name": "testAccessFunctionProtected",
+    "memberof": "src/Access/Function.js",
+    "generator": false,
+    "async": false,
+    "static": true,
+    "longname": "src/Access/Function.js~testAccessFunctionProtected",
+    "access": "protected",
+    "export": true,
+    "importPath": "esdoc-test/src/Access/Function.js",
+    "importStyle": "{testAccessFunctionProtected}",
+    "description": "",
+    "lineNumber": 9
+  },
+  {
+    "__docId__": 11,
+    "kind": "function",
+    "name": "testAccessFunctionPackage",
+    "memberof": "src/Access/Function.js",
+    "generator": false,
+    "async": false,
+    "static": true,
+    "longname": "src/Access/Function.js~testAccessFunctionPackage",
+    "access": "package",
+    "export": true,
+    "importPath": "esdoc-test/src/Access/Function.js",
+    "importStyle": "{testAccessFunctionPackage}",
+    "description": "",
+    "lineNumber": 14
+  },
+  {
+    "__docId__": 12,
+    "kind": "function",
+    "name": "testAccessFunctionPrivate",
+    "memberof": "src/Access/Function.js",
+    "generator": false,
+    "async": false,
+    "static": true,
+    "longname": "src/Access/Function.js~testAccessFunctionPrivate",
+    "access": "private",
+    "export": true,
+    "importPath": "esdoc-test/src/Access/Function.js",
+    "importStyle": "{testAccessFunctionPrivate}",
+    "description": "",
+    "lineNumber": 19
+  },
+  {
+    "__docId__": 13,
+    "kind": "file",
+    "name": "src/Access/Member.js",
+    "content": "export default class TestAccessMember {\n  constructor() {\n    /**\n     * @public\n     * @type {number}\n     */\n    this.mPublic = 123;\n\n    /**\n     * @protected\n     * @type {number}\n     */\n    this.mProtected = 123;\n\n    /**\n     * @package\n     * @type {number}\n     */\n    this.mPackage = 123;\n\n    /**\n     * @private\n     * @type {number}\n     */\n    this.mPrivate = 123;\n  }\n}\n",
+    "static": true,
+    "longname": "/Users/aumbetov/Desktop/esdoc/test/integration-test/src/Access/Member.js",
+    "access": null,
+    "description": null,
+    "lineNumber": 1
+  },
+  {
+    "__docId__": 14,
+    "kind": "class",
+    "name": "TestAccessMember",
+    "memberof": "src/Access/Member.js",
+    "static": true,
+    "longname": "src/Access/Member.js~TestAccessMember",
+    "access": null,
+    "export": true,
+    "importPath": "esdoc-test/src/Access/Member.js",
+    "importStyle": "TestAccessMember",
+    "description": null,
+    "lineNumber": 1,
+    "undocument": true,
+    "interface": false
+  },
+  {
+    "__docId__": 15,
+    "kind": "constructor",
+    "name": "constructor",
+    "memberof": "src/Access/Member.js~TestAccessMember",
+    "generator": false,
+    "async": false,
+    "static": false,
+    "longname": "src/Access/Member.js~TestAccessMember#constructor",
+    "access": null,
+    "description": null,
+    "lineNumber": 2,
+    "undocument": true
+  },
+  {
+    "__docId__": 16,
+    "kind": "member",
+    "name": "mPublic",
+    "memberof": "src/Access/Member.js~TestAccessMember",
+    "static": false,
+    "longname": "src/Access/Member.js~TestAccessMember#mPublic",
+    "access": "public",
+    "description": "",
+    "lineNumber": 7,
+    "type": {
+      "nullable": null,
+      "types": [
+        "number"
+      ],
+      "spread": false,
+      "description": null
+    }
+  },
+  {
+    "__docId__": 17,
+    "kind": "member",
+    "name": "mProtected",
+    "memberof": "src/Access/Member.js~TestAccessMember",
+    "static": false,
+    "longname": "src/Access/Member.js~TestAccessMember#mProtected",
+    "access": "protected",
+    "description": "",
+    "lineNumber": 13,
+    "type": {
+      "nullable": null,
+      "types": [
+        "number"
+      ],
+      "spread": false,
+      "description": null
+    }
+  },
+  {
+    "__docId__": 18,
+    "kind": "member",
+    "name": "mPackage",
+    "memberof": "src/Access/Member.js~TestAccessMember",
+    "static": false,
+    "longname": "src/Access/Member.js~TestAccessMember#mPackage",
+    "access": "package",
+    "description": "",
+    "lineNumber": 19,
+    "type": {
+      "nullable": null,
+      "types": [
+        "number"
+      ],
+      "spread": false,
+      "description": null
+    }
+  },
+  {
+    "__docId__": 19,
+    "kind": "member",
+    "name": "mPrivate",
+    "memberof": "src/Access/Member.js~TestAccessMember",
+    "static": false,
+    "longname": "src/Access/Member.js~TestAccessMember#mPrivate",
+    "access": "private",
+    "description": "",
+    "lineNumber": 25,
+    "type": {
+      "nullable": null,
+      "types": [
+        "number"
+      ],
+      "spread": false,
+      "description": null
+    }
+  },
+  {
+    "__docId__": 20,
+    "kind": "file",
+    "name": "src/Access/Method.js",
+    "content": "export default class TestAccessMethod {\n  /**\n   * @public\n   */\n  methodPublic(){}\n\n  /**\n   * @protected\n   */\n  methodProtected(){}\n\n  /**\n   * @package\n   */\n  methodPackage(){}\n\n  /**\n   * @private\n   */\n  methodPrivate(){}\n}\n",
+    "static": true,
+    "longname": "/Users/aumbetov/Desktop/esdoc/test/integration-test/src/Access/Method.js",
+    "access": null,
+    "description": null,
+    "lineNumber": 1
+  },
+  {
+    "__docId__": 21,
+    "kind": "class",
+    "name": "TestAccessMethod",
+    "memberof": "src/Access/Method.js",
+    "static": true,
+    "longname": "src/Access/Method.js~TestAccessMethod",
+    "access": null,
+    "export": true,
+    "importPath": "esdoc-test/src/Access/Method.js",
+    "importStyle": "TestAccessMethod",
+    "description": null,
+    "lineNumber": 1,
+    "undocument": true,
+    "interface": false
+  },
+  {
+    "__docId__": 22,
+    "kind": "method",
+    "name": "methodPublic",
+    "memberof": "src/Access/Method.js~TestAccessMethod",
+    "generator": false,
+    "async": false,
+    "static": false,
+    "longname": "src/Access/Method.js~TestAccessMethod#methodPublic",
+    "access": "public",
+    "description": "",
+    "lineNumber": 5
+  },
+  {
+    "__docId__": 23,
+    "kind": "method",
+    "name": "methodProtected",
+    "memberof": "src/Access/Method.js~TestAccessMethod",
+    "generator": false,
+    "async": false,
+    "static": false,
+    "longname": "src/Access/Method.js~TestAccessMethod#methodProtected",
+    "access": "protected",
+    "description": "",
+    "lineNumber": 10
+  },
+  {
+    "__docId__": 24,
+    "kind": "method",
+    "name": "methodPackage",
+    "memberof": "src/Access/Method.js~TestAccessMethod",
+    "generator": false,
+    "async": false,
+    "static": false,
+    "longname": "src/Access/Method.js~TestAccessMethod#methodPackage",
+    "access": "package",
+    "description": "",
+    "lineNumber": 15
+  },
+  {
+    "__docId__": 25,
+    "kind": "method",
+    "name": "methodPrivate",
+    "memberof": "src/Access/Method.js~TestAccessMethod",
+    "generator": false,
+    "async": false,
+    "static": false,
+    "longname": "src/Access/Method.js~TestAccessMethod#methodPrivate",
+    "access": "private",
+    "description": "",
+    "lineNumber": 20
+  },
+  {
+    "__docId__": 26,
+    "kind": "file",
+    "name": "src/Access/Variable.js",
+    "content": "/**\n * @type {number}\n * @public\n */\nexport const testAccessVariablePublic = 123;\n\n/**\n * @type {number}\n * @protected\n */\nexport const testAccessVariableProtected = 123;\n\n/**\n * @type {number}\n * @package\n */\nexport const testAccessVariablePackage = 123;\n\n/**\n * @type {number}\n * @private\n */\nexport const testAccessVariablePrivate = 123;\n",
+    "static": true,
+    "longname": "/Users/aumbetov/Desktop/esdoc/test/integration-test/src/Access/Variable.js",
+    "access": null,
+    "description": null,
+    "lineNumber": 1
+  },
+  {
+    "__docId__": 27,
+    "kind": "variable",
+    "name": "testAccessVariablePublic",
+    "memberof": "src/Access/Variable.js",
+    "static": true,
+    "longname": "src/Access/Variable.js~testAccessVariablePublic",
+    "access": "public",
+    "export": true,
+    "importPath": "esdoc-test/src/Access/Variable.js",
+    "importStyle": "{testAccessVariablePublic}",
+    "description": "",
+    "lineNumber": 5,
+    "type": {
+      "nullable": null,
+      "types": [
+        "number"
+      ],
+      "spread": false,
+      "description": null
+    }
+  },
+  {
+    "__docId__": 28,
+    "kind": "variable",
+    "name": "testAccessVariableProtected",
+    "memberof": "src/Access/Variable.js",
+    "static": true,
+    "longname": "src/Access/Variable.js~testAccessVariableProtected",
+    "access": "protected",
+    "export": true,
+    "importPath": "esdoc-test/src/Access/Variable.js",
+    "importStyle": "{testAccessVariableProtected}",
+    "description": "",
+    "lineNumber": 11,
+    "type": {
+      "nullable": null,
+      "types": [
+        "number"
+      ],
+      "spread": false,
+      "description": null
+    }
+  },
+  {
+    "__docId__": 29,
+    "kind": "variable",
+    "name": "testAccessVariablePackage",
+    "memberof": "src/Access/Variable.js",
+    "static": true,
+    "longname": "src/Access/Variable.js~testAccessVariablePackage",
+    "access": "package",
+    "export": true,
+    "importPath": "esdoc-test/src/Access/Variable.js",
+    "importStyle": "{testAccessVariablePackage}",
+    "description": "",
+    "lineNumber": 17,
+    "type": {
+      "nullable": null,
+      "types": [
+        "number"
+      ],
+      "spread": false,
+      "description": null
+    }
+  },
+  {
+    "__docId__": 30,
+    "kind": "variable",
+    "name": "testAccessVariablePrivate",
+    "memberof": "src/Access/Variable.js",
+    "static": true,
+    "longname": "src/Access/Variable.js~testAccessVariablePrivate",
+    "access": "private",
+    "export": true,
+    "importPath": "esdoc-test/src/Access/Variable.js",
+    "importStyle": "{testAccessVariablePrivate}",
+    "description": "",
+    "lineNumber": 23,
+    "type": {
+      "nullable": null,
+      "types": [
+        "number"
+      ],
+      "spread": false,
+      "description": null
+    }
+  },
+  {
+    "__docId__": 31,
+    "kind": "file",
+    "name": "src/Async/Async.js",
+    "content": "export class TestAsync {\n  async methodAsync(){}\n}\n\nexport async function testAsyncFunction(){}\n",
+    "static": true,
+    "longname": "/Users/aumbetov/Desktop/esdoc/test/integration-test/src/Async/Async.js",
+    "access": null,
+    "description": null,
+    "lineNumber": 1
+  },
+  {
+    "__docId__": 32,
+    "kind": "class",
+    "name": "TestAsync",
+    "memberof": "src/Async/Async.js",
+    "static": true,
+    "longname": "src/Async/Async.js~TestAsync",
+    "access": null,
+    "export": true,
+    "importPath": "esdoc-test/src/Async/Async.js",
+    "importStyle": "{TestAsync}",
+    "description": null,
+    "lineNumber": 1,
+    "undocument": true,
+    "interface": false
+  },
+  {
+    "__docId__": 33,
+    "kind": "method",
+    "name": "methodAsync",
+    "memberof": "src/Async/Async.js~TestAsync",
+    "generator": false,
+    "async": true,
+    "static": false,
+    "longname": "src/Async/Async.js~TestAsync#methodAsync",
+    "access": null,
+    "description": null,
+    "lineNumber": 2,
+    "undocument": true
+  },
+  {
+    "__docId__": 34,
+    "kind": "function",
+    "name": "testAsyncFunction",
+    "memberof": "src/Async/Async.js",
+    "generator": false,
+    "async": true,
+    "static": true,
+    "longname": "src/Async/Async.js~testAsyncFunction",
+    "access": null,
+    "export": true,
+    "importPath": "esdoc-test/src/Async/Async.js",
+    "importStyle": "{testAsyncFunction}",
+    "description": null,
+    "lineNumber": 5,
+    "undocument": true
+  },
+  {
+    "__docId__": 35,
+    "kind": "file",
+    "name": "src/Deprecated/Deprecated.js",
+    "content": "/**\n * @deprecated this is deprecated.\n */\nexport class TestDeprecatedClass {\n  constructor() {\n    /**\n     * @type {number}\n     * @deprecated\n     */\n    this.mDeprecated = 123;\n  }\n\n  /**\n   * @deprecated\n   */\n  methodDeprecated(){}\n}\n\n/**\n * @deprecated\n */\nexport function testDeprecatedFunction(){}\n\n/**\n * @deprecated\n */\nexport const testDeprecatedVariable = 123;\n",
+    "static": true,
+    "longname": "/Users/aumbetov/Desktop/esdoc/test/integration-test/src/Deprecated/Deprecated.js",
+    "access": null,
+    "description": null,
+    "lineNumber": 1
+  },
+  {
+    "__docId__": 36,
+    "kind": "class",
+    "name": "TestDeprecatedClass",
+    "memberof": "src/Deprecated/Deprecated.js",
+    "static": true,
+    "longname": "src/Deprecated/Deprecated.js~TestDeprecatedClass",
+    "access": null,
+    "export": true,
+    "importPath": "esdoc-test/src/Deprecated/Deprecated.js",
+    "importStyle": "{TestDeprecatedClass}",
+    "description": "",
+    "lineNumber": 4,
+    "deprecated": "this is deprecated.",
+    "interface": false
+  },
+  {
+    "__docId__": 37,
+    "kind": "constructor",
+    "name": "constructor",
+    "memberof": "src/Deprecated/Deprecated.js~TestDeprecatedClass",
+    "generator": false,
+    "async": false,
+    "static": false,
+    "longname": "src/Deprecated/Deprecated.js~TestDeprecatedClass#constructor",
+    "access": null,
+    "description": null,
+    "lineNumber": 5,
+    "undocument": true
+  },
+  {
+    "__docId__": 38,
+    "kind": "member",
+    "name": "mDeprecated",
+    "memberof": "src/Deprecated/Deprecated.js~TestDeprecatedClass",
+    "static": false,
+    "longname": "src/Deprecated/Deprecated.js~TestDeprecatedClass#mDeprecated",
+    "access": null,
+    "description": "",
+    "lineNumber": 10,
+    "deprecated": true,
+    "type": {
+      "nullable": null,
+      "types": [
+        "number"
+      ],
+      "spread": false,
+      "description": null
+    }
+  },
+  {
+    "__docId__": 39,
+    "kind": "method",
+    "name": "methodDeprecated",
+    "memberof": "src/Deprecated/Deprecated.js~TestDeprecatedClass",
+    "generator": false,
+    "async": false,
+    "static": false,
+    "longname": "src/Deprecated/Deprecated.js~TestDeprecatedClass#methodDeprecated",
+    "access": null,
+    "description": "",
+    "lineNumber": 16,
+    "deprecated": true
+  },
+  {
+    "__docId__": 40,
+    "kind": "function",
+    "name": "testDeprecatedFunction",
+    "memberof": "src/Deprecated/Deprecated.js",
+    "generator": false,
+    "async": false,
+    "static": true,
+    "longname": "src/Deprecated/Deprecated.js~testDeprecatedFunction",
+    "access": null,
+    "export": true,
+    "importPath": "esdoc-test/src/Deprecated/Deprecated.js",
+    "importStyle": "{testDeprecatedFunction}",
+    "description": "",
+    "lineNumber": 22,
+    "deprecated": true
+  },
+  {
+    "__docId__": 41,
+    "kind": "variable",
+    "name": "testDeprecatedVariable",
+    "memberof": "src/Deprecated/Deprecated.js",
+    "static": true,
+    "longname": "src/Deprecated/Deprecated.js~testDeprecatedVariable",
+    "access": null,
+    "export": true,
+    "importPath": "esdoc-test/src/Deprecated/Deprecated.js",
+    "importStyle": "{testDeprecatedVariable}",
+    "description": "",
+    "lineNumber": 27,
+    "deprecated": true
+  },
+  {
+    "__docId__": 42,
+    "kind": "file",
+    "name": "src/Desc/Desc.js",
+    "content": "/**\n * this is TestDescClass.\n */\nexport class TestDescClass {\n  /**\n   * this is constructor.\n   */\n  constructor() {\n    /**\n     * this is memberDesc.\n     */\n    this.memberDesc = 123;\n  }\n\n  /**\n   * this is methodDesc.\n   */\n  methodDesc(){}\n\n  /**\n   * this is getterDesc.\n   */\n  get getterDesc(){}\n\n  /**\n   * this is setterDesc.\n   */\n  set setterDesc(v){}\n}\n\n/**\n * this is testDescFunction.\n */\nexport function testDescFunction(){}\n\n/**\n * this is testDescVariable.\n * @type {number}\n */\nexport const testDescVariable = 123;\n\n/**\n * this is TestDescTypedef.\n * @typedef {Object} TestDescTypedef\n */\n\n/**\n * this is TestDescExternal.\n * @external {TestDescExternal} http://example.com\n */\n",
+    "static": true,
+    "longname": "/Users/aumbetov/Desktop/esdoc/test/integration-test/src/Desc/Desc.js",
+    "access": null,
+    "description": null,
+    "lineNumber": 1
+  },
+  {
+    "__docId__": 43,
+    "kind": "class",
+    "name": "TestDescClass",
+    "memberof": "src/Desc/Desc.js",
+    "static": true,
+    "longname": "src/Desc/Desc.js~TestDescClass",
+    "access": null,
+    "export": true,
+    "importPath": "esdoc-test",
+    "importStyle": "{TestDescClass}",
+    "description": "this is TestDescClass.",
+    "lineNumber": 4,
+    "interface": false
+  },
+  {
+    "__docId__": 44,
+    "kind": "constructor",
+    "name": "constructor",
+    "memberof": "src/Desc/Desc.js~TestDescClass",
+    "generator": false,
+    "async": false,
+    "static": false,
+    "longname": "src/Desc/Desc.js~TestDescClass#constructor",
+    "access": null,
+    "description": "this is constructor.",
+    "lineNumber": 8
+  },
+  {
+    "__docId__": 45,
+    "kind": "member",
+    "name": "memberDesc",
+    "memberof": "src/Desc/Desc.js~TestDescClass",
+    "static": false,
+    "longname": "src/Desc/Desc.js~TestDescClass#memberDesc",
+    "access": null,
+    "description": "this is memberDesc.",
+    "lineNumber": 12
+  },
+  {
+    "__docId__": 46,
+    "kind": "method",
+    "name": "methodDesc",
+    "memberof": "src/Desc/Desc.js~TestDescClass",
+    "generator": false,
+    "async": false,
+    "static": false,
+    "longname": "src/Desc/Desc.js~TestDescClass#methodDesc",
+    "access": null,
+    "description": "this is methodDesc.",
+    "lineNumber": 18
+  },
+  {
+    "__docId__": 47,
+    "kind": "get",
+    "name": "getterDesc",
+    "memberof": "src/Desc/Desc.js~TestDescClass",
+    "generator": false,
+    "async": false,
+    "static": false,
+    "longname": "src/Desc/Desc.js~TestDescClass#getterDesc",
+    "access": null,
+    "description": "this is getterDesc.",
+    "lineNumber": 23
+  },
+  {
+    "__docId__": 48,
+    "kind": "set",
+    "name": "setterDesc",
+    "memberof": "src/Desc/Desc.js~TestDescClass",
+    "generator": false,
+    "async": false,
+    "static": false,
+    "longname": "src/Desc/Desc.js~TestDescClass#setterDesc",
+    "access": null,
+    "description": "this is setterDesc.",
+    "lineNumber": 28
+  },
+  {
+    "__docId__": 49,
+    "kind": "function",
+    "name": "testDescFunction",
+    "memberof": "src/Desc/Desc.js",
+    "generator": false,
+    "async": false,
+    "static": true,
+    "longname": "src/Desc/Desc.js~testDescFunction",
+    "access": null,
+    "export": true,
+    "importPath": "esdoc-test",
+    "importStyle": "{testDescFunction}",
+    "description": "this is testDescFunction.",
+    "lineNumber": 34
+  },
+  {
+    "__docId__": 50,
+    "kind": "variable",
+    "name": "testDescVariable",
+    "memberof": "src/Desc/Desc.js",
+    "static": true,
+    "longname": "src/Desc/Desc.js~testDescVariable",
+    "access": null,
+    "export": true,
+    "importPath": "esdoc-test",
+    "importStyle": "{testDescVariable}",
+    "description": "this is testDescVariable.",
+    "lineNumber": 40,
+    "type": {
+      "nullable": null,
+      "types": [
+        "number"
+      ],
+      "spread": false,
+      "description": null
+    }
+  },
+  {
+    "__docId__": 51,
+    "kind": "typedef",
+    "name": "TestDescTypedef",
+    "memberof": "src/Desc/Desc.js",
+    "static": true,
+    "longname": "src/Desc/Desc.js~TestDescTypedef",
+    "access": null,
+    "description": "this is TestDescTypedef.",
+    "type": {
+      "types": [
+        "Object"
+      ],
+      "optional": false,
+      "name": "TestDescTypedef"
+    }
+  },
+  {
+    "__docId__": 52,
+    "kind": "external",
+    "name": "TestDescExternal",
+    "externalLink": "http://example.com",
+    "memberof": "src/Desc/Desc.js",
+    "static": true,
+    "longname": "src/Desc/Desc.js~TestDescExternal",
+    "access": null,
+    "description": "this is TestDescExternal."
+  },
+  {
+    "__docId__": 53,
+    "kind": "file",
+    "name": "src/Emits/Emits.js",
+    "content": "export default class TestEmitsClass {\n  /**\n   * @emits {TestEmitsEvent1} emits event when foo.\n   * @emits {TestEmitsEvent2} emits event when bar.\n   */\n  methodEmits(){}\n}\n\n/**\n * @emits {TestEmitsEvent1}\n */\nexport function testEmitsFunction(){}\n\nexport class TestEmitsEvent1 {}\nexport class TestEmitsEvent2 {}\n\n",
+    "static": true,
+    "longname": "/Users/aumbetov/Desktop/esdoc/test/integration-test/src/Emits/Emits.js",
+    "access": null,
+    "description": null,
+    "lineNumber": 1
+  },
+  {
+    "__docId__": 54,
+    "kind": "class",
+    "name": "TestEmitsClass",
+    "memberof": "src/Emits/Emits.js",
+    "static": true,
+    "longname": "src/Emits/Emits.js~TestEmitsClass",
+    "access": null,
+    "export": true,
+    "importPath": "esdoc-test/src/Emits/Emits.js",
+    "importStyle": "TestEmitsClass",
+    "description": null,
+    "lineNumber": 1,
+    "undocument": true,
+    "interface": false
+  },
+  {
+    "__docId__": 55,
+    "kind": "method",
+    "name": "methodEmits",
+    "memberof": "src/Emits/Emits.js~TestEmitsClass",
+    "generator": false,
+    "async": false,
+    "static": false,
+    "longname": "src/Emits/Emits.js~TestEmitsClass#methodEmits",
+    "access": null,
+    "description": "",
+    "lineNumber": 6,
+    "emits": [
+      {
+        "types": [
+          "TestEmitsEvent1"
+        ],
+        "description": "emits event when foo."
+      },
+      {
+        "types": [
+          "TestEmitsEvent2"
+        ],
+        "description": "emits event when bar."
+      }
+    ]
+  },
+  {
+    "__docId__": 56,
+    "kind": "function",
+    "name": "testEmitsFunction",
+    "memberof": "src/Emits/Emits.js",
+    "generator": false,
+    "async": false,
+    "static": true,
+    "longname": "src/Emits/Emits.js~testEmitsFunction",
+    "access": null,
+    "export": true,
+    "importPath": "esdoc-test/src/Emits/Emits.js",
+    "importStyle": "{testEmitsFunction}",
+    "description": "",
+    "lineNumber": 12,
+    "emits": [
+      {
+        "types": [
+          "TestEmitsEvent1"
+        ],
+        "description": ""
+      }
+    ]
+  },
+  {
+    "__docId__": 57,
+    "kind": "class",
+    "name": "TestEmitsEvent1",
+    "memberof": "src/Emits/Emits.js",
+    "static": true,
+    "longname": "src/Emits/Emits.js~TestEmitsEvent1",
+    "access": null,
+    "export": true,
+    "importPath": "esdoc-test/src/Emits/Emits.js",
+    "importStyle": "{TestEmitsEvent1}",
+    "description": null,
+    "lineNumber": 14,
+    "undocument": true,
+    "interface": false
+  },
+  {
+    "__docId__": 58,
+    "kind": "class",
+    "name": "TestEmitsEvent2",
+    "memberof": "src/Emits/Emits.js",
+    "static": true,
+    "longname": "src/Emits/Emits.js~TestEmitsEvent2",
+    "access": null,
+    "export": true,
+    "importPath": "esdoc-test/src/Emits/Emits.js",
+    "importStyle": "{TestEmitsEvent2}",
+    "description": null,
+    "lineNumber": 15,
+    "undocument": true,
+    "interface": false
+  },
+  {
+    "__docId__": 59,
+    "kind": "file",
+    "name": "src/Example/Example.js",
+    "content": "/**\n * @example\n * console.log(1)\n *\n * @example <caption>this is caption</caption>\n * console.log(2)\n */\nexport class TestExample {}\n",
+    "static": true,
+    "longname": "/Users/aumbetov/Desktop/esdoc/test/integration-test/src/Example/Example.js",
+    "access": null,
+    "description": null,
+    "lineNumber": 1
+  },
+  {
+    "__docId__": 60,
+    "kind": "class",
+    "name": "TestExample",
+    "memberof": "src/Example/Example.js",
+    "static": true,
+    "longname": "src/Example/Example.js~TestExample",
+    "access": null,
+    "export": true,
+    "importPath": "esdoc-test/src/Example/Example.js",
+    "importStyle": "{TestExample}",
+    "description": "",
+    "examples": [
+      "console.log(1)",
+      "<caption>this is caption</caption>\nconsole.log(2)"
+    ],
+    "lineNumber": 8,
+    "interface": false
+  },
+  {
+    "__docId__": 61,
+    "kind": "file",
+    "name": "src/Experimental/Experimental.js",
+    "content": "/**\n * @experimental this is experimental\n */\nexport default class TestExperimental {\n  /**\n   * @experimental\n   */\n  methodExperimental(){}\n}\n",
+    "static": true,
+    "longname": "/Users/aumbetov/Desktop/esdoc/test/integration-test/src/Experimental/Experimental.js",
+    "access": null,
+    "description": null,
+    "lineNumber": 1
+  },
+  {
+    "__docId__": 62,
+    "kind": "class",
+    "name": "TestExperimental",
+    "memberof": "src/Experimental/Experimental.js",
+    "static": true,
+    "longname": "src/Experimental/Experimental.js~TestExperimental",
+    "access": null,
+    "export": true,
+    "importPath": "esdoc-test/src/Experimental/Experimental.js",
+    "importStyle": "TestExperimental",
+    "description": "",
+    "lineNumber": 4,
+    "experimental": "this is experimental",
+    "interface": false
+  },
+  {
+    "__docId__": 63,
+    "kind": "method",
+    "name": "methodExperimental",
+    "memberof": "src/Experimental/Experimental.js~TestExperimental",
+    "generator": false,
+    "async": false,
+    "static": false,
+    "longname": "src/Experimental/Experimental.js~TestExperimental#methodExperimental",
+    "access": null,
+    "description": "",
+    "lineNumber": 8,
+    "experimental": true
+  },
+  {
+    "__docId__": 64,
+    "kind": "file",
+    "name": "src/Export/Anonymous/Class.js",
+    "content": "/**\n * this is anonymous class.\n */\nexport default class {}\n",
+    "static": true,
+    "longname": "/Users/aumbetov/Desktop/esdoc/test/integration-test/src/Export/Anonymous/Class.js",
+    "access": null,
+    "description": null,
+    "lineNumber": 1
+  },
+  {
+    "__docId__": 65,
+    "kind": "class",
+    "name": "Class",
+    "memberof": "src/Export/Anonymous/Class.js",
+    "static": true,
+    "longname": "src/Export/Anonymous/Class.js~Class",
+    "access": null,
+    "export": true,
+    "importPath": "esdoc-test/src/Export/Anonymous/Class.js",
+    "importStyle": "Class",
+    "description": "this is anonymous class.",
+    "lineNumber": 4,
+    "interface": false
+  },
+  {
+    "__docId__": 66,
+    "kind": "file",
+    "name": "src/Export/Anonymous/Function.js",
+    "content": "export default function(){}\n",
+    "static": true,
+    "longname": "/Users/aumbetov/Desktop/esdoc/test/integration-test/src/Export/Anonymous/Function.js",
+    "access": null,
+    "description": null,
+    "lineNumber": 1
+  },
+  {
+    "__docId__": 67,
+    "kind": "function",
+    "name": "Function",
+    "memberof": "src/Export/Anonymous/Function.js",
+    "generator": false,
+    "async": false,
+    "static": true,
+    "longname": "src/Export/Anonymous/Function.js~Function",
+    "access": null,
+    "export": true,
+    "importPath": "esdoc-test/src/Export/Anonymous/Function.js",
+    "importStyle": "Function",
+    "description": null,
+    "lineNumber": 1,
+    "undocument": true
+  },
+  {
+    "__docId__": 68,
+    "kind": "file",
+    "name": "src/Export/ArrowFunction.js",
+    "content": "/**\n * this is ArrowFunction.\n */\nexport default ()=>{};\n\n/**\n * this is testExportArrowFunction2.\n */\nexport const testExportArrowFunction2 = ()=>{};\n\n/**\n * this is testExportArrowFunction3.\n */\nconst testExportArrowFunction3 = ()=>{};\n\n/**\n * this is testExportArrowFunction4.\n */\nconst testExportArrowFunction4 = ()=>{};\nexport {testExportArrowFunction4};\n\nconst testExportArrowFunction5 = ()=>{};\nconst testExportArrowFunction6 = ()=>{};\nexport {testExportArrowFunction5, testExportArrowFunction6};\n",
+    "static": true,
+    "longname": "/Users/aumbetov/Desktop/esdoc/test/integration-test/src/Export/ArrowFunction.js",
+    "access": null,
+    "description": null,
+    "lineNumber": 1
+  },
+  {
+    "__docId__": 69,
+    "kind": "function",
+    "name": "ArrowFunction",
+    "memberof": "src/Export/ArrowFunction.js",
+    "generator": false,
+    "async": false,
+    "static": true,
+    "longname": "src/Export/ArrowFunction.js~ArrowFunction",
+    "access": null,
+    "export": true,
+    "importPath": "esdoc-test/src/Export/ArrowFunction.js",
+    "importStyle": "ArrowFunction",
+    "description": "this is ArrowFunction.",
+    "lineNumber": 4
+  },
+  {
+    "__docId__": 70,
+    "kind": "function",
+    "name": "testExportArrowFunction2",
+    "memberof": "src/Export/ArrowFunction.js",
+    "generator": false,
+    "async": false,
+    "static": true,
+    "longname": "src/Export/ArrowFunction.js~testExportArrowFunction2",
+    "access": null,
+    "export": true,
+    "importPath": "esdoc-test/src/Export/ArrowFunction.js",
+    "importStyle": "{testExportArrowFunction2}",
+    "description": "this is testExportArrowFunction2.",
+    "lineNumber": 9
+  },
+  {
+    "__docId__": 71,
+    "kind": "function",
+    "name": "testExportArrowFunction3",
+    "memberof": "src/Export/ArrowFunction.js",
+    "generator": false,
+    "async": false,
+    "static": true,
+    "longname": "src/Export/ArrowFunction.js~testExportArrowFunction3",
+    "access": null,
+    "export": false,
+    "importPath": "esdoc-test/src/Export/ArrowFunction.js",
+    "importStyle": null,
+    "description": "this is testExportArrowFunction3.",
+    "lineNumber": 14
+  },
+  {
+    "__docId__": 72,
+    "kind": "function",
+    "name": "testExportArrowFunction4",
+    "memberof": "src/Export/ArrowFunction.js",
+    "generator": false,
+    "async": false,
+    "static": true,
+    "longname": "src/Export/ArrowFunction.js~testExportArrowFunction4",
+    "access": null,
+    "export": true,
+    "importPath": "esdoc-test/src/Export/ArrowFunction.js",
+    "importStyle": "{testExportArrowFunction4}",
+    "description": "this is testExportArrowFunction4.",
+    "lineNumber": 19
+  },
+  {
+    "__docId__": 73,
+    "kind": "function",
+    "name": "testExportArrowFunction5",
+    "memberof": "src/Export/ArrowFunction.js",
+    "generator": false,
+    "async": false,
+    "static": true,
+    "longname": "src/Export/ArrowFunction.js~testExportArrowFunction5",
+    "access": null,
+    "export": true,
+    "importPath": "esdoc-test/src/Export/ArrowFunction.js",
+    "importStyle": "{testExportArrowFunction5}",
+    "description": null,
+    "lineNumber": 22,
+    "undocument": true
+  },
+  {
+    "__docId__": 74,
+    "kind": "function",
+    "name": "testExportArrowFunction6",
+    "memberof": "src/Export/ArrowFunction.js",
+    "generator": false,
+    "async": false,
+    "static": true,
+    "longname": "src/Export/ArrowFunction.js~testExportArrowFunction6",
+    "access": null,
+    "export": true,
+    "importPath": "esdoc-test/src/Export/ArrowFunction.js",
+    "importStyle": "{testExportArrowFunction6}",
+    "description": null,
+    "lineNumber": 23,
+    "undocument": true
+  },
+  {
+    "__docId__": 75,
+    "kind": "file",
+    "name": "src/Export/Class.js",
+    "content": "// default export\nexport default class TestExportClass1 {}\n\n// named export\nexport class TestExportClass2 {}\n\n// indirect export with declaration\nclass TestExportClass3 {}\nexport {TestExportClass3};\n\n// indirect export with expression\nconst TestExportClass4 = class {};\nexport {TestExportClass4};\n\n// non export\nclass TestExportClass5 {}\n\n// multiple named export\nclass TestExportClass6 {}\nclass TestExportClass7 {}\nexport {TestExportClass6, TestExportClass7};\n\n",
+    "static": true,
+    "longname": "/Users/aumbetov/Desktop/esdoc/test/integration-test/src/Export/Class.js",
+    "access": null,
+    "description": null,
+    "lineNumber": 1
+  },
+  {
+    "__docId__": 76,
+    "kind": "class",
+    "name": "TestExportClass1",
+    "memberof": "src/Export/Class.js",
+    "static": true,
+    "longname": "src/Export/Class.js~TestExportClass1",
+    "access": null,
+    "export": true,
+    "importPath": "esdoc-test/src/Export/Class.js",
+    "importStyle": "TestExportClass1",
+    "description": null,
+    "lineNumber": 2,
+    "undocument": true,
+    "interface": false
+  },
+  {
+    "__docId__": 77,
+    "kind": "class",
+    "name": "TestExportClass2",
+    "memberof": "src/Export/Class.js",
+    "static": true,
+    "longname": "src/Export/Class.js~TestExportClass2",
+    "access": null,
+    "export": true,
+    "importPath": "esdoc-test/src/Export/Class.js",
+    "importStyle": "{TestExportClass2}",
+    "description": null,
+    "lineNumber": 5,
+    "undocument": true,
+    "interface": false
+  },
+  {
+    "__docId__": 78,
+    "kind": "class",
+    "name": "TestExportClass5",
+    "memberof": "src/Export/Class.js",
+    "static": true,
+    "longname": "src/Export/Class.js~TestExportClass5",
+    "access": null,
+    "export": false,
+    "importPath": "esdoc-test/src/Export/Class.js",
+    "importStyle": null,
+    "description": null,
+    "lineNumber": 16,
+    "undocument": true,
+    "interface": false
+  },
+  {
+    "__docId__": 79,
+    "kind": "class",
+    "name": "TestExportClass3",
+    "memberof": "src/Export/Class.js",
+    "static": true,
+    "longname": "src/Export/Class.js~TestExportClass3",
+    "access": null,
+    "export": true,
+    "importPath": "esdoc-test/src/Export/Class.js",
+    "importStyle": "{TestExportClass3}",
+    "description": null,
+    "lineNumber": 8,
+    "undocument": true,
+    "interface": false
+  },
+  {
+    "__docId__": 80,
+    "kind": "class",
+    "name": "TestExportClass4",
+    "memberof": "src/Export/Class.js",
+    "static": true,
+    "longname": "src/Export/Class.js~TestExportClass4",
+    "access": null,
+    "export": true,
+    "importPath": "esdoc-test/src/Export/Class.js",
+    "importStyle": "{TestExportClass4}",
+    "description": null,
+    "lineNumber": 12,
+    "undocument": true,
+    "interface": false
+  },
+  {
+    "__docId__": 81,
+    "kind": "class",
+    "name": "TestExportClass6",
+    "memberof": "src/Export/Class.js",
+    "static": true,
+    "longname": "src/Export/Class.js~TestExportClass6",
+    "access": null,
+    "export": true,
+    "importPath": "esdoc-test/src/Export/Class.js",
+    "importStyle": "{TestExportClass6}",
+    "description": null,
+    "lineNumber": 19,
+    "undocument": true,
+    "interface": false
+  },
+  {
+    "__docId__": 82,
+    "kind": "class",
+    "name": "TestExportClass7",
+    "memberof": "src/Export/Class.js",
+    "static": true,
+    "longname": "src/Export/Class.js~TestExportClass7",
+    "access": null,
+    "export": true,
+    "importPath": "esdoc-test/src/Export/Class.js",
+    "importStyle": "{TestExportClass7}",
+    "description": null,
+    "lineNumber": 20,
+    "undocument": true,
+    "interface": false
+  },
+  {
+    "__docId__": 83,
+    "kind": "file",
+    "name": "src/Export/Extends/Class.js",
+    "content": "// inner class that non export\nclass TestExportExtendsClassInner {}\n\n// outer class\nexport class TestExportExtendsClass extends TestExportExtendsClassInner {}\n",
+    "static": true,
+    "longname": "/Users/aumbetov/Desktop/esdoc/test/integration-test/src/Export/Extends/Class.js",
+    "access": null,
+    "description": null,
+    "lineNumber": 1
+  },
+  {
+    "__docId__": 84,
+    "kind": "class",
+    "name": "TestExportExtendsClassInner",
+    "memberof": "src/Export/Extends/Class.js",
+    "static": true,
+    "longname": "src/Export/Extends/Class.js~TestExportExtendsClassInner",
+    "access": null,
+    "export": false,
+    "importPath": "esdoc-test/src/Export/Extends/Class.js",
+    "importStyle": null,
+    "description": null,
+    "lineNumber": 2,
+    "undocument": true,
+    "interface": false
+  },
+  {
+    "__docId__": 85,
+    "kind": "class",
+    "name": "TestExportExtendsClass",
+    "memberof": "src/Export/Extends/Class.js",
+    "static": true,
+    "longname": "src/Export/Extends/Class.js~TestExportExtendsClass",
+    "access": null,
+    "export": true,
+    "importPath": "esdoc-test/src/Export/Extends/Class.js",
+    "importStyle": "{TestExportExtendsClass}",
+    "description": null,
+    "lineNumber": 5,
+    "undocument": true,
+    "interface": false,
+    "extends": [
+      "TestExportExtendsClassInner"
+    ]
+  },
+  {
+    "__docId__": 86,
+    "kind": "file",
+    "name": "src/Export/Function.js",
+    "content": "// default export\nexport default function testExportFunction1(){}\n\n// named export\nexport function testExportFunction2(){}\n\n// named export with expression\nexport const testExportFunction3 = function(){};\n\n// non export\nfunction testExportFunction4(){}\n\n// non export with expression\nconst testExportFunction5 = function(){};\n\n// indirect named export\nfunction testExportFunction6() {}\nexport {testExportFunction6};\n\n// multiple named export\nfunction testExportFunction7() {}\nfunction testExportFunction8() {}\nexport {testExportFunction7, testExportFunction8};\n",
+    "static": true,
+    "longname": "/Users/aumbetov/Desktop/esdoc/test/integration-test/src/Export/Function.js",
+    "access": null,
+    "description": null,
+    "lineNumber": 1
+  },
+  {
+    "__docId__": 87,
+    "kind": "function",
+    "name": "testExportFunction1",
+    "memberof": "src/Export/Function.js",
+    "generator": false,
+    "async": false,
+    "static": true,
+    "longname": "src/Export/Function.js~testExportFunction1",
+    "access": null,
+    "export": true,
+    "importPath": "esdoc-test/src/Export/Function.js",
+    "importStyle": "testExportFunction1",
+    "description": null,
+    "lineNumber": 2,
+    "undocument": true
+  },
+  {
+    "__docId__": 88,
+    "kind": "function",
+    "name": "testExportFunction2",
+    "memberof": "src/Export/Function.js",
+    "generator": false,
+    "async": false,
+    "static": true,
+    "longname": "src/Export/Function.js~testExportFunction2",
+    "access": null,
+    "export": true,
+    "importPath": "esdoc-test/src/Export/Function.js",
+    "importStyle": "{testExportFunction2}",
+    "description": null,
+    "lineNumber": 5,
+    "undocument": true
+  },
+  {
+    "__docId__": 89,
+    "kind": "function",
+    "name": "testExportFunction3",
+    "memberof": "src/Export/Function.js",
+    "generator": false,
+    "async": false,
+    "static": true,
+    "longname": "src/Export/Function.js~testExportFunction3",
+    "access": null,
+    "export": true,
+    "importPath": "esdoc-test/src/Export/Function.js",
+    "importStyle": "{testExportFunction3}",
+    "description": null,
+    "lineNumber": 8,
+    "undocument": true
+  },
+  {
+    "__docId__": 90,
+    "kind": "function",
+    "name": "testExportFunction4",
+    "memberof": "src/Export/Function.js",
+    "generator": false,
+    "async": false,
+    "static": true,
+    "longname": "src/Export/Function.js~testExportFunction4",
+    "access": null,
+    "export": false,
+    "importPath": "esdoc-test/src/Export/Function.js",
+    "importStyle": null,
+    "description": null,
+    "lineNumber": 11,
+    "undocument": true
+  },
+  {
+    "__docId__": 91,
+    "kind": "function",
+    "name": "testExportFunction5",
+    "memberof": "src/Export/Function.js",
+    "generator": false,
+    "async": false,
+    "static": true,
+    "longname": "src/Export/Function.js~testExportFunction5",
+    "access": null,
+    "export": false,
+    "importPath": "esdoc-test/src/Export/Function.js",
+    "importStyle": null,
+    "description": null,
+    "lineNumber": 14,
+    "undocument": true
+  },
+  {
+    "__docId__": 92,
+    "kind": "function",
+    "name": "testExportFunction6",
+    "memberof": "src/Export/Function.js",
+    "generator": false,
+    "async": false,
+    "static": true,
+    "longname": "src/Export/Function.js~testExportFunction6",
+    "access": null,
+    "export": true,
+    "importPath": "esdoc-test/src/Export/Function.js",
+    "importStyle": "{testExportFunction6}",
+    "description": null,
+    "lineNumber": 17,
+    "undocument": true
+  },
+  {
+    "__docId__": 93,
+    "kind": "function",
+    "name": "testExportFunction7",
+    "memberof": "src/Export/Function.js",
+    "generator": false,
+    "async": false,
+    "static": true,
+    "longname": "src/Export/Function.js~testExportFunction7",
+    "access": null,
+    "export": true,
+    "importPath": "esdoc-test/src/Export/Function.js",
+    "importStyle": "{testExportFunction7}",
+    "description": null,
+    "lineNumber": 21,
+    "undocument": true
+  },
+  {
+    "__docId__": 94,
+    "kind": "function",
+    "name": "testExportFunction8",
+    "memberof": "src/Export/Function.js",
+    "generator": false,
+    "async": false,
+    "static": true,
+    "longname": "src/Export/Function.js~testExportFunction8",
+    "access": null,
+    "export": true,
+    "importPath": "esdoc-test/src/Export/Function.js",
+    "importStyle": "{testExportFunction8}",
+    "description": null,
+    "lineNumber": 22,
+    "undocument": true
+  },
+  {
+    "__docId__": 95,
+    "kind": "file",
+    "name": "src/Export/IndirectDefault/Class.js",
+    "content": "// default export with indirect declaration\nclass TestExportIndirectDefaultClass {}\nexport default TestExportIndirectDefaultClass;\n",
+    "static": true,
+    "longname": "/Users/aumbetov/Desktop/esdoc/test/integration-test/src/Export/IndirectDefault/Class.js",
+    "access": null,
+    "description": null,
+    "lineNumber": 1
+  },
+  {
+    "__docId__": 96,
+    "kind": "class",
+    "name": "TestExportIndirectDefaultClass",
+    "memberof": "src/Export/IndirectDefault/Class.js",
+    "static": true,
+    "longname": "src/Export/IndirectDefault/Class.js~TestExportIndirectDefaultClass",
+    "access": null,
+    "export": true,
+    "importPath": "esdoc-test/src/Export/IndirectDefault/Class.js",
+    "importStyle": "TestExportIndirectDefaultClass",
+    "description": null,
+    "lineNumber": 2,
+    "undocument": true,
+    "interface": false
+  },
+  {
+    "__docId__": 97,
+    "kind": "file",
+    "name": "src/Export/IndirectDefault/Function.js",
+    "content": "// indirect default export\nfunction testExportIndirectDefaultFunction() {}\nexport default testExportIndirectDefaultFunction;\n",
+    "static": true,
+    "longname": "/Users/aumbetov/Desktop/esdoc/test/integration-test/src/Export/IndirectDefault/Function.js",
+    "access": null,
+    "description": null,
+    "lineNumber": 1
+  },
+  {
+    "__docId__": 98,
+    "kind": "function",
+    "name": "testExportIndirectDefaultFunction",
+    "memberof": "src/Export/IndirectDefault/Function.js",
+    "generator": false,
+    "async": false,
+    "static": true,
+    "longname": "src/Export/IndirectDefault/Function.js~testExportIndirectDefaultFunction",
+    "access": null,
+    "export": true,
+    "importPath": "esdoc-test/src/Export/IndirectDefault/Function.js",
+    "importStyle": "testExportIndirectDefaultFunction",
+    "description": null,
+    "lineNumber": 2,
+    "undocument": true
+  },
+  {
+    "__docId__": 99,
+    "kind": "file",
+    "name": "src/Export/IndirectDefault/Variable.js",
+    "content": "const testExportIndirectDefaultVariable = {};\nexport default testExportIndirectDefaultVariable;\n",
+    "static": true,
+    "longname": "/Users/aumbetov/Desktop/esdoc/test/integration-test/src/Export/IndirectDefault/Variable.js",
+    "access": null,
+    "description": null,
+    "lineNumber": 1
+  },
+  {
+    "__docId__": 100,
+    "kind": "variable",
+    "name": "testExportIndirectDefaultVariable",
+    "memberof": "src/Export/IndirectDefault/Variable.js",
+    "static": true,
+    "longname": "src/Export/IndirectDefault/Variable.js~testExportIndirectDefaultVariable",
+    "access": null,
+    "export": true,
+    "importPath": "esdoc-test/src/Export/IndirectDefault/Variable.js",
+    "importStyle": "testExportIndirectDefaultVariable",
+    "description": null,
+    "lineNumber": 1,
+    "undocument": true
+  },
+  {
+    "__docId__": 101,
+    "kind": "file",
+    "name": "src/Export/NewExpression/Class.js",
+    "content": "// new expression default export\nclass TestExportNewExpression1 {}\nexport default new TestExportNewExpression1();\n\n// new expression named export (1)\nclass TestExportNewExpression2 {}\nexport const testExportNewExpression2 = new TestExportNewExpression2();\n\n// new expression named export (2)\nexport class TestExportNewExpression3 {}\nexport const testExportNewExpression3 = new TestExportNewExpression3();\n\n// new expression named export (3)\nexport const testExportNewExpression4 = new foo.Bar();\n",
+    "static": true,
+    "longname": "/Users/aumbetov/Desktop/esdoc/test/integration-test/src/Export/NewExpression/Class.js",
+    "access": null,
+    "description": null,
+    "lineNumber": 1
+  },
+  {
+    "__docId__": 102,
+    "kind": "variable",
+    "name": "testExportNewExpression2",
+    "memberof": "src/Export/NewExpression/Class.js",
+    "static": true,
+    "longname": "src/Export/NewExpression/Class.js~testExportNewExpression2",
+    "access": null,
+    "export": true,
+    "importPath": "esdoc-test/src/Export/NewExpression/Class.js",
+    "importStyle": "{testExportNewExpression2}",
+    "description": null,
+    "lineNumber": 7,
+    "undocument": true
+  },
+  {
+    "__docId__": 103,
+    "kind": "class",
+    "name": "TestExportNewExpression3",
+    "memberof": "src/Export/NewExpression/Class.js",
+    "static": true,
+    "longname": "src/Export/NewExpression/Class.js~TestExportNewExpression3",
+    "access": null,
+    "export": true,
+    "importPath": "esdoc-test/src/Export/NewExpression/Class.js",
+    "importStyle": "{TestExportNewExpression3}",
+    "description": null,
+    "lineNumber": 10,
+    "undocument": true,
+    "interface": false
+  },
+  {
+    "__docId__": 104,
+    "kind": "variable",
+    "name": "testExportNewExpression3",
+    "memberof": "src/Export/NewExpression/Class.js",
+    "static": true,
+    "longname": "src/Export/NewExpression/Class.js~testExportNewExpression3",
+    "access": null,
+    "export": true,
+    "importPath": "esdoc-test/src/Export/NewExpression/Class.js",
+    "importStyle": "{testExportNewExpression3}",
+    "description": null,
+    "lineNumber": 11,
+    "undocument": true
+  },
+  {
+    "__docId__": 105,
+    "kind": "variable",
+    "name": "testExportNewExpression4",
+    "memberof": "src/Export/NewExpression/Class.js",
+    "static": true,
+    "longname": "src/Export/NewExpression/Class.js~testExportNewExpression4",
+    "access": null,
+    "export": true,
+    "importPath": "esdoc-test/src/Export/NewExpression/Class.js",
+    "importStyle": "{testExportNewExpression4}",
+    "description": null,
+    "lineNumber": 14,
+    "undocument": true
+  },
+  {
+    "__docId__": 106,
+    "kind": "class",
+    "name": "TestExportNewExpression1",
+    "memberof": "src/Export/NewExpression/Class.js",
+    "static": true,
+    "longname": "src/Export/NewExpression/Class.js~TestExportNewExpression1",
+    "access": null,
+    "export": true,
+    "importPath": "esdoc-test/src/Export/NewExpression/Class.js",
+    "importStyle": null,
+    "description": null,
+    "lineNumber": 2,
+    "pseudoExport": true,
+    "undocument": true,
+    "interface": false
+  },
+  {
+    "__docId__": 107,
+    "kind": "variable",
+    "name": "testExportNewExpression1",
+    "memberof": "src/Export/NewExpression/Class.js",
+    "static": true,
+    "longname": "src/Export/NewExpression/Class.js~testExportNewExpression1",
+    "access": null,
+    "export": true,
+    "importPath": "esdoc-test/src/Export/NewExpression/Class.js",
+    "importStyle": "testExportNewExpression1",
+    "description": null,
+    "lineNumber": 3,
+    "undocument": true
+  },
+  {
+    "__docId__": 108,
+    "kind": "class",
+    "name": "TestExportNewExpression2",
+    "memberof": "src/Export/NewExpression/Class.js",
+    "static": true,
+    "longname": "src/Export/NewExpression/Class.js~TestExportNewExpression2",
+    "access": null,
+    "export": true,
+    "importPath": "esdoc-test/src/Export/NewExpression/Class.js",
+    "importStyle": null,
+    "description": null,
+    "lineNumber": 6,
+    "pseudoExport": true,
+    "undocument": true,
+    "interface": false
+  },
+  {
+    "__docId__": 109,
+    "kind": "file",
+    "name": "src/Export/NewExpression/WithIndirectExport.js",
+    "content": "// indirect default export\nclass TestExportNewExpressionIndirect {}\nconst testExportNewExpressionIndirect = new TestExportNewExpressionIndirect();\nexport default testExportNewExpressionIndirect;\n",
+    "static": true,
+    "longname": "/Users/aumbetov/Desktop/esdoc/test/integration-test/src/Export/NewExpression/WithIndirectExport.js",
+    "access": null,
+    "description": null,
+    "lineNumber": 1
+  },
+  {
+    "__docId__": 110,
+    "kind": "class",
+    "name": "TestExportNewExpressionIndirect",
+    "memberof": "src/Export/NewExpression/WithIndirectExport.js",
+    "static": true,
+    "longname": "src/Export/NewExpression/WithIndirectExport.js~TestExportNewExpressionIndirect",
+    "access": null,
+    "export": true,
+    "importPath": "esdoc-test/src/Export/NewExpression/WithIndirectExport.js",
+    "importStyle": null,
+    "description": null,
+    "lineNumber": 2,
+    "pseudoExport": true,
+    "undocument": true,
+    "interface": false
+  },
+  {
+    "__docId__": 111,
+    "kind": "variable",
+    "name": "testExportNewExpressionIndirect",
+    "memberof": "src/Export/NewExpression/WithIndirectExport.js",
+    "static": true,
+    "longname": "src/Export/NewExpression/WithIndirectExport.js~testExportNewExpressionIndirect",
+    "access": null,
+    "export": true,
+    "importPath": "esdoc-test/src/Export/NewExpression/WithIndirectExport.js",
+    "importStyle": "testExportNewExpressionIndirect",
+    "description": null,
+    "lineNumber": 4,
+    "undocument": true
+  },
+  {
+    "__docId__": 112,
+    "kind": "file",
+    "name": "src/Export/NewExpression/WithObjectProperty.js",
+    "content": "// through object\nclass TestExportNewExpressionProperty {}\nconst obj = {};\nobj.TestExportNewExpressionProperty = TestExportNewExpressionProperty;\nexport default new obj.TestExportNewExpressionProperty();\n",
+    "static": true,
+    "longname": "/Users/aumbetov/Desktop/esdoc/test/integration-test/src/Export/NewExpression/WithObjectProperty.js",
+    "access": null,
+    "description": null,
+    "lineNumber": 1
+  },
+  {
+    "__docId__": 113,
+    "kind": "variable",
+    "name": "obj",
+    "memberof": "src/Export/NewExpression/WithObjectProperty.js",
+    "static": true,
+    "longname": "src/Export/NewExpression/WithObjectProperty.js~obj",
+    "access": null,
+    "export": false,
+    "importPath": "esdoc-test/src/Export/NewExpression/WithObjectProperty.js",
+    "importStyle": null,
+    "description": null,
+    "lineNumber": 3,
+    "undocument": true
+  },
+  {
+    "__docId__": 114,
+    "kind": "class",
+    "name": "TestExportNewExpressionProperty",
+    "memberof": "src/Export/NewExpression/WithObjectProperty.js",
+    "static": true,
+    "longname": "src/Export/NewExpression/WithObjectProperty.js~TestExportNewExpressionProperty",
+    "access": null,
+    "export": true,
+    "importPath": "esdoc-test/src/Export/NewExpression/WithObjectProperty.js",
+    "importStyle": null,
+    "description": null,
+    "lineNumber": 2,
+    "pseudoExport": true,
+    "undocument": true,
+    "interface": false
+  },
+  {
+    "__docId__": 115,
+    "kind": "variable",
+    "name": "testExportNewExpressionProperty",
+    "memberof": "src/Export/NewExpression/WithObjectProperty.js",
+    "static": true,
+    "longname": "src/Export/NewExpression/WithObjectProperty.js~testExportNewExpressionProperty",
+    "access": null,
+    "export": true,
+    "importPath": "esdoc-test/src/Export/NewExpression/WithObjectProperty.js",
+    "importStyle": "testExportNewExpressionProperty",
+    "description": null,
+    "lineNumber": 5,
+    "undocument": true
+  },
+  {
+    "__docId__": 116,
+    "kind": "file",
+    "name": "src/Export/NewExpression/WithOriginalExport.js",
+    "content": "// original is exported\nexport class TestExportNewExpressionWithOriginalExported {}\nexport default new TestExportNewExpressionWithOriginalExported();\n",
+    "static": true,
+    "longname": "/Users/aumbetov/Desktop/esdoc/test/integration-test/src/Export/NewExpression/WithOriginalExport.js",
+    "access": null,
+    "description": null,
+    "lineNumber": 1
+  },
+  {
+    "__docId__": 117,
+    "kind": "class",
+    "name": "TestExportNewExpressionWithOriginalExported",
+    "memberof": "src/Export/NewExpression/WithOriginalExport.js",
+    "static": true,
+    "longname": "src/Export/NewExpression/WithOriginalExport.js~TestExportNewExpressionWithOriginalExported",
+    "access": null,
+    "export": true,
+    "importPath": "esdoc-test/src/Export/NewExpression/WithOriginalExport.js",
+    "importStyle": "{TestExportNewExpressionWithOriginalExported}",
+    "description": null,
+    "lineNumber": 2,
+    "undocument": true,
+    "interface": false
+  },
+  {
+    "__docId__": 118,
+    "kind": "variable",
+    "name": "testExportNewExpressionWithOriginalExported",
+    "memberof": "src/Export/NewExpression/WithOriginalExport.js",
+    "static": true,
+    "longname": "src/Export/NewExpression/WithOriginalExport.js~testExportNewExpressionWithOriginalExported",
+    "access": null,
+    "export": true,
+    "importPath": "esdoc-test/src/Export/NewExpression/WithOriginalExport.js",
+    "importStyle": "testExportNewExpressionWithOriginalExported",
+    "description": null,
+    "lineNumber": 3,
+    "undocument": true
+  },
+  {
+    "__docId__": 119,
+    "kind": "file",
+    "name": "src/Export/Variable.js",
+    "content": "// default export\nexport default testExportVariable1 = {};\n\n// named export\nexport const testExportVariable2 = 123;\n\n// non export\nconst testExportVariable3 = 123;\n\n// indirect named export\nconst testExportVariable4 = {};\nexport {testExportVariable4};\n\n// multiple named export\nconst testExportVariable5 = 1;\nconst testExportVariable6 = 1;\nexport {testExportVariable5, testExportVariable6};\n\n// destructuring export\n// in this case, only first variable is export. other are not export.\n// todo: export other\nexport const [testExportVariable7, testExportVariable8] = [1, 2];\nexport const {testExportVariable9, testExportVariable10} = {testExportVariable9: 1, testExportVariable10: 2};\n",
+    "static": true,
+    "longname": "/Users/aumbetov/Desktop/esdoc/test/integration-test/src/Export/Variable.js",
+    "access": null,
+    "description": null,
+    "lineNumber": 1
+  },
+  {
+    "__docId__": 120,
+    "kind": "variable",
+    "name": "testExportVariable1",
+    "memberof": "src/Export/Variable.js",
+    "static": true,
+    "longname": "src/Export/Variable.js~testExportVariable1",
+    "access": null,
+    "export": true,
+    "importPath": "esdoc-test/src/Export/Variable.js",
+    "importStyle": "testExportVariable1",
+    "description": null,
+    "lineNumber": 2,
+    "undocument": true
+  },
+  {
+    "__docId__": 121,
+    "kind": "variable",
+    "name": "testExportVariable2",
+    "memberof": "src/Export/Variable.js",
+    "static": true,
+    "longname": "src/Export/Variable.js~testExportVariable2",
+    "access": null,
+    "export": true,
+    "importPath": "esdoc-test/src/Export/Variable.js",
+    "importStyle": "{testExportVariable2}",
+    "description": null,
+    "lineNumber": 5,
+    "undocument": true
+  },
+  {
+    "__docId__": 122,
+    "kind": "variable",
+    "name": "testExportVariable3",
+    "memberof": "src/Export/Variable.js",
+    "static": true,
+    "longname": "src/Export/Variable.js~testExportVariable3",
+    "access": null,
+    "export": false,
+    "importPath": "esdoc-test/src/Export/Variable.js",
+    "importStyle": null,
+    "description": null,
+    "lineNumber": 8,
+    "undocument": true
+  },
+  {
+    "__docId__": 123,
+    "kind": "variable",
+    "name": "testExportVariable7",
+    "memberof": "src/Export/Variable.js",
+    "static": true,
+    "longname": "src/Export/Variable.js~testExportVariable7",
+    "access": null,
+    "export": true,
+    "importPath": "esdoc-test/src/Export/Variable.js",
+    "importStyle": "{testExportVariable7}",
+    "description": null,
+    "lineNumber": 22,
+    "undocument": true
+  },
+  {
+    "__docId__": 124,
+    "kind": "variable",
+    "name": "testExportVariable9",
+    "memberof": "src/Export/Variable.js",
+    "static": true,
+    "longname": "src/Export/Variable.js~testExportVariable9",
+    "access": null,
+    "export": true,
+    "importPath": "esdoc-test/src/Export/Variable.js",
+    "importStyle": "{testExportVariable9}",
+    "description": null,
+    "lineNumber": 23,
+    "undocument": true
+  },
+  {
+    "__docId__": 125,
+    "kind": "variable",
+    "name": "testExportVariable4",
+    "memberof": "src/Export/Variable.js",
+    "static": true,
+    "longname": "src/Export/Variable.js~testExportVariable4",
+    "access": null,
+    "export": true,
+    "importPath": "esdoc-test/src/Export/Variable.js",
+    "importStyle": "{testExportVariable4}",
+    "description": null,
+    "lineNumber": 11,
+    "undocument": true
+  },
+  {
+    "__docId__": 126,
+    "kind": "variable",
+    "name": "testExportVariable5",
+    "memberof": "src/Export/Variable.js",
+    "static": true,
+    "longname": "src/Export/Variable.js~testExportVariable5",
+    "access": null,
+    "export": true,
+    "importPath": "esdoc-test/src/Export/Variable.js",
+    "importStyle": "{testExportVariable5}",
+    "description": null,
+    "lineNumber": 15,
+    "undocument": true
+  },
+  {
+    "__docId__": 127,
+    "kind": "variable",
+    "name": "testExportVariable6",
+    "memberof": "src/Export/Variable.js",
+    "static": true,
+    "longname": "src/Export/Variable.js~testExportVariable6",
+    "access": null,
+    "export": true,
+    "importPath": "esdoc-test/src/Export/Variable.js",
+    "importStyle": "{testExportVariable6}",
+    "description": null,
+    "lineNumber": 16,
+    "undocument": true
+  },
+  {
+    "__docId__": 128,
+    "kind": "file",
+    "name": "src/Extends/Extends.js",
+    "content": "// extends builtin\nexport class TestExtendsBuiltin extends Array {}\n\n// extends deep\nexport class TestExtendsDeepShape extends Array {}\nexport class TestExtendsDeepRectangle extends TestExtendsDeepShape {}\nexport class TestExtendsDeepSquare extends TestExtendsDeepRectangle {}\n\n// extends expression\nfunction TestExtendsExpressionInner(){}\nexport class TestExtendsExpression extends TestExtendsExpressionInner(123) {}\n\n// extends inner\nclass _TestExtendsInner {}\nexport class TestExtendsInner extends _TestExtendsInner {}\n\n// extends mixin\nfunction mixin(a, b){}\nexport class TestExtendsMixinInner1 {}\nexport class TestExtendsMixinInner2 {}\nexport class TestExtendsMixin extends mixin(TestExtendsMixinInner1, TestExtendsMixinInner2) {}\n\n// extends outer\nimport Bar from './Foo/Bar';\nexport class TestExtendsOuter extends Bar {}\n\n// extends from property\nimport obj from 'TestExtendsPropertyPackage';\nexport class TestExtendsProperty extends obj.TestExtendsPropertyInner {}\n",
+    "static": true,
+    "longname": "/Users/aumbetov/Desktop/esdoc/test/integration-test/src/Extends/Extends.js",
+    "access": null,
+    "description": null,
+    "lineNumber": 1
+  },
+  {
+    "__docId__": 129,
+    "kind": "class",
+    "name": "TestExtendsBuiltin",
+    "memberof": "src/Extends/Extends.js",
+    "static": true,
+    "longname": "src/Extends/Extends.js~TestExtendsBuiltin",
+    "access": null,
+    "export": true,
+    "importPath": "esdoc-test/src/Extends/Extends.js",
+    "importStyle": "{TestExtendsBuiltin}",
+    "description": null,
+    "lineNumber": 2,
+    "undocument": true,
+    "interface": false,
+    "extends": [
+      "Array"
+    ]
+  },
+  {
+    "__docId__": 130,
+    "kind": "class",
+    "name": "TestExtendsDeepShape",
+    "memberof": "src/Extends/Extends.js",
+    "static": true,
+    "longname": "src/Extends/Extends.js~TestExtendsDeepShape",
+    "access": null,
+    "export": true,
+    "importPath": "esdoc-test/src/Extends/Extends.js",
+    "importStyle": "{TestExtendsDeepShape}",
+    "description": null,
+    "lineNumber": 5,
+    "undocument": true,
+    "interface": false,
+    "extends": [
+      "Array"
+    ]
+  },
+  {
+    "__docId__": 131,
+    "kind": "class",
+    "name": "TestExtendsDeepRectangle",
+    "memberof": "src/Extends/Extends.js",
+    "static": true,
+    "longname": "src/Extends/Extends.js~TestExtendsDeepRectangle",
+    "access": null,
+    "export": true,
+    "importPath": "esdoc-test/src/Extends/Extends.js",
+    "importStyle": "{TestExtendsDeepRectangle}",
+    "description": null,
+    "lineNumber": 6,
+    "undocument": true,
+    "interface": false,
+    "extends": [
+      "TestExtendsDeepShape"
+    ]
+  },
+  {
+    "__docId__": 132,
+    "kind": "class",
+    "name": "TestExtendsDeepSquare",
+    "memberof": "src/Extends/Extends.js",
+    "static": true,
+    "longname": "src/Extends/Extends.js~TestExtendsDeepSquare",
+    "access": null,
+    "export": true,
+    "importPath": "esdoc-test/src/Extends/Extends.js",
+    "importStyle": "{TestExtendsDeepSquare}",
+    "description": null,
+    "lineNumber": 7,
+    "undocument": true,
+    "interface": false,
+    "extends": [
+      "TestExtendsDeepRectangle"
+    ]
+  },
+  {
+    "__docId__": 133,
+    "kind": "function",
+    "name": "TestExtendsExpressionInner",
+    "memberof": "src/Extends/Extends.js",
+    "generator": false,
+    "async": false,
+    "static": true,
+    "longname": "src/Extends/Extends.js~TestExtendsExpressionInner",
+    "access": null,
+    "export": false,
+    "importPath": "esdoc-test/src/Extends/Extends.js",
+    "importStyle": null,
+    "description": null,
+    "lineNumber": 10,
+    "undocument": true
+  },
+  {
+    "__docId__": 134,
+    "kind": "class",
+    "name": "TestExtendsExpression",
+    "memberof": "src/Extends/Extends.js",
+    "static": true,
+    "longname": "src/Extends/Extends.js~TestExtendsExpression",
+    "access": null,
+    "export": true,
+    "importPath": "esdoc-test/src/Extends/Extends.js",
+    "importStyle": "{TestExtendsExpression}",
+    "description": null,
+    "lineNumber": 11,
+    "undocument": true,
+    "interface": false,
+    "expressionExtends": "TestExtendsExpressionInner(123)",
+    "extends": [
+      "TestExtendsExpressionInner"
+    ]
+  },
+  {
+    "__docId__": 135,
+    "kind": "class",
+    "name": "_TestExtendsInner",
+    "memberof": "src/Extends/Extends.js",
+    "static": true,
+    "longname": "src/Extends/Extends.js~_TestExtendsInner",
+    "access": null,
+    "export": false,
+    "importPath": "esdoc-test/src/Extends/Extends.js",
+    "importStyle": null,
+    "description": null,
+    "lineNumber": 14,
+    "undocument": true,
+    "interface": false
+  },
+  {
+    "__docId__": 136,
+    "kind": "class",
+    "name": "TestExtendsInner",
+    "memberof": "src/Extends/Extends.js",
+    "static": true,
+    "longname": "src/Extends/Extends.js~TestExtendsInner",
+    "access": null,
+    "export": true,
+    "importPath": "esdoc-test/src/Extends/Extends.js",
+    "importStyle": "{TestExtendsInner}",
+    "description": null,
+    "lineNumber": 15,
+    "undocument": true,
+    "interface": false,
+    "extends": [
+      "_TestExtendsInner"
+    ]
+  },
+  {
+    "__docId__": 137,
+    "kind": "function",
+    "name": "mixin",
+    "memberof": "src/Extends/Extends.js",
+    "generator": false,
+    "async": false,
+    "static": true,
+    "longname": "src/Extends/Extends.js~mixin",
+    "access": null,
+    "export": false,
+    "importPath": "esdoc-test/src/Extends/Extends.js",
+    "importStyle": null,
+    "description": null,
+    "lineNumber": 18,
+    "undocument": true
+  },
+  {
+    "__docId__": 138,
+    "kind": "class",
+    "name": "TestExtendsMixinInner1",
+    "memberof": "src/Extends/Extends.js",
+    "static": true,
+    "longname": "src/Extends/Extends.js~TestExtendsMixinInner1",
+    "access": null,
+    "export": true,
+    "importPath": "esdoc-test/src/Extends/Extends.js",
+    "importStyle": "{TestExtendsMixinInner1}",
+    "description": null,
+    "lineNumber": 19,
+    "undocument": true,
+    "interface": false
+  },
+  {
+    "__docId__": 139,
+    "kind": "class",
+    "name": "TestExtendsMixinInner2",
+    "memberof": "src/Extends/Extends.js",
+    "static": true,
+    "longname": "src/Extends/Extends.js~TestExtendsMixinInner2",
+    "access": null,
+    "export": true,
+    "importPath": "esdoc-test/src/Extends/Extends.js",
+    "importStyle": "{TestExtendsMixinInner2}",
+    "description": null,
+    "lineNumber": 20,
+    "undocument": true,
+    "interface": false
+  },
+  {
+    "__docId__": 140,
+    "kind": "class",
+    "name": "TestExtendsMixin",
+    "memberof": "src/Extends/Extends.js",
+    "static": true,
+    "longname": "src/Extends/Extends.js~TestExtendsMixin",
+    "access": null,
+    "export": true,
+    "importPath": "esdoc-test/src/Extends/Extends.js",
+    "importStyle": "{TestExtendsMixin}",
+    "description": null,
+    "lineNumber": 21,
+    "undocument": true,
+    "interface": false,
+    "expressionExtends": "mixin(TestExtendsMixinInner1, TestExtendsMixinInner2)",
+    "extends": [
+      "TestExtendsMixinInner1",
+      "TestExtendsMixinInner2"
+    ]
+  },
+  {
+    "__docId__": 141,
+    "kind": "class",
+    "name": "TestExtendsOuter",
+    "memberof": "src/Extends/Extends.js",
+    "static": true,
+    "longname": "src/Extends/Extends.js~TestExtendsOuter",
+    "access": null,
+    "export": true,
+    "importPath": "esdoc-test/src/Extends/Extends.js",
+    "importStyle": "{TestExtendsOuter}",
+    "description": null,
+    "lineNumber": 25,
+    "undocument": true,
+    "interface": false,
+    "extends": [
+      "src/Extends/Foo/Bar.js~Bar"
+    ]
+  },
+  {
+    "__docId__": 142,
+    "kind": "class",
+    "name": "TestExtendsProperty",
+    "memberof": "src/Extends/Extends.js",
+    "static": true,
+    "longname": "src/Extends/Extends.js~TestExtendsProperty",
+    "access": null,
+    "export": true,
+    "importPath": "esdoc-test/src/Extends/Extends.js",
+    "importStyle": "{TestExtendsProperty}",
+    "description": null,
+    "lineNumber": 29,
+    "undocument": true,
+    "interface": false,
+    "extends": [
+      "TestExtendsPropertyPackage~obj.TestExtendsPropertyInner"
+    ]
+  },
+  {
+    "__docId__": 143,
+    "kind": "file",
+    "name": "src/External/External.js",
+    "content": "/**\n * @external {TestExternal} http://example.com\n */\n",
+    "static": true,
+    "longname": "/Users/aumbetov/Desktop/esdoc/test/integration-test/src/External/External.js",
+    "access": null,
+    "description": null,
+    "lineNumber": 1
+  },
+  {
+    "__docId__": 144,
+    "kind": "external",
+    "name": "TestExternal",
+    "externalLink": "http://example.com",
+    "memberof": "src/External/External.js",
+    "static": true,
+    "longname": "src/External/External.js~TestExternal",
+    "access": null,
+    "description": ""
+  },
+  {
+    "__docId__": 145,
+    "kind": "file",
+    "name": "src/Generator/Generator.js",
+    "content": "export default class TestGeneratorClass {\n  *methodGenerator(){}\n}\n\nexport function *testGeneratorFunction(){}\n",
+    "static": true,
+    "longname": "/Users/aumbetov/Desktop/esdoc/test/integration-test/src/Generator/Generator.js",
+    "access": null,
+    "description": null,
+    "lineNumber": 1
+  },
+  {
+    "__docId__": 146,
+    "kind": "class",
+    "name": "TestGeneratorClass",
+    "memberof": "src/Generator/Generator.js",
+    "static": true,
+    "longname": "src/Generator/Generator.js~TestGeneratorClass",
+    "access": null,
+    "export": true,
+    "importPath": "esdoc-test/src/Generator/Generator.js",
+    "importStyle": "TestGeneratorClass",
+    "description": null,
+    "lineNumber": 1,
+    "undocument": true,
+    "interface": false
+  },
+  {
+    "__docId__": 147,
+    "kind": "method",
+    "name": "methodGenerator",
+    "memberof": "src/Generator/Generator.js~TestGeneratorClass",
+    "generator": true,
+    "async": false,
+    "static": false,
+    "longname": "src/Generator/Generator.js~TestGeneratorClass#methodGenerator",
+    "access": null,
+    "description": null,
+    "lineNumber": 2,
+    "undocument": true
+  },
+  {
+    "__docId__": 148,
+    "kind": "function",
+    "name": "testGeneratorFunction",
+    "memberof": "src/Generator/Generator.js",
+    "generator": true,
+    "async": false,
+    "static": true,
+    "longname": "src/Generator/Generator.js~testGeneratorFunction",
+    "access": null,
+    "export": true,
+    "importPath": "esdoc-test/src/Generator/Generator.js",
+    "importStyle": "{testGeneratorFunction}",
+    "description": null,
+    "lineNumber": 5,
+    "undocument": true
+  },
+  {
+    "__docId__": 149,
+    "kind": "file",
+    "name": "src/Ignore/Ignore.js",
+    "content": "/**\n * @ignore\n */\nexport default class TestIgnoreClass {}\n",
+    "static": true,
+    "longname": "/Users/aumbetov/Desktop/esdoc/test/integration-test/src/Ignore/Ignore.js",
+    "access": null,
+    "description": null,
+    "lineNumber": 1
+  },
+  {
+    "__docId__": 150,
+    "kind": "class",
+    "name": "TestIgnoreClass",
+    "memberof": "src/Ignore/Ignore.js",
+    "static": true,
+    "longname": "src/Ignore/Ignore.js~TestIgnoreClass",
+    "access": null,
+    "export": true,
+    "importPath": "esdoc-test/src/Ignore/Ignore.js",
+    "importStyle": "TestIgnoreClass",
+    "description": "",
+    "lineNumber": 4,
+    "ignore": true,
+    "interface": false
+  },
+  {
+    "__docId__": 151,
+    "kind": "file",
+    "name": "src/Implements/Implements.js",
+    "content": "import TestInterfaceOuter from './Foo/Bar';\n\n/**\n * @implements {TestInterfaceInner}\n * @implements {TestInterfaceOuter}\n */\nexport default class TestImplementsClass {}\n\n/**\n * @interface\n */\nexport class TestInterfaceInner {}\n",
+    "static": true,
+    "longname": "/Users/aumbetov/Desktop/esdoc/test/integration-test/src/Implements/Implements.js",
+    "access": null,
+    "description": null,
+    "lineNumber": 1
+  },
+  {
+    "__docId__": 152,
+    "kind": "class",
+    "name": "TestImplementsClass",
+    "memberof": "src/Implements/Implements.js",
+    "static": true,
+    "longname": "src/Implements/Implements.js~TestImplementsClass",
+    "access": null,
+    "export": true,
+    "importPath": "esdoc-test/src/Implements/Implements.js",
+    "importStyle": "TestImplementsClass",
+    "description": "",
+    "lineNumber": 7,
+    "interface": false,
+    "implements": [
+      "TestInterfaceInner",
+      "TestInterfaceOuter"
+    ]
+  },
+  {
+    "__docId__": 153,
+    "kind": "class",
+    "name": "TestInterfaceInner",
+    "memberof": "src/Implements/Implements.js",
+    "static": true,
+    "longname": "src/Implements/Implements.js~TestInterfaceInner",
+    "access": null,
+    "export": true,
+    "importPath": "esdoc-test/src/Implements/Implements.js",
+    "importStyle": "{TestInterfaceInner}",
+    "description": "",
+    "lineNumber": 12,
+    "interface": true
+  },
+  {
+    "__docId__": 154,
+    "kind": "file",
+    "name": "src/Interface/Interface.js",
+    "content": "/**\n * @interface\n */\nexport class TestInterfaceClass {}\n",
+    "static": true,
+    "longname": "/Users/aumbetov/Desktop/esdoc/test/integration-test/src/Interface/Interface.js",
+    "access": null,
+    "description": null,
+    "lineNumber": 1
+  },
+  {
+    "__docId__": 155,
+    "kind": "class",
+    "name": "TestInterfaceClass",
+    "memberof": "src/Interface/Interface.js",
+    "static": true,
+    "longname": "src/Interface/Interface.js~TestInterfaceClass",
+    "access": null,
+    "export": true,
+    "importPath": "esdoc-test/src/Interface/Interface.js",
+    "importStyle": "{TestInterfaceClass}",
+    "description": "",
+    "lineNumber": 4,
+    "interface": true
+  },
+  {
+    "__docId__": 156,
+    "kind": "file",
+    "name": "src/Kind/Kind.js",
+    "content": "export class TestKindClass {\n  constructor() {\n    this.testKindMember = true;\n  }\n\n  get testKindGet() {}\n\n  set testKindSet(v) {}\n\n  testKindMethod() {}\n}\n\nexport function testKindFunction() {}\n\nexport const testKindVariable = 1;\n\n/**\n * @typedef {Object} testKindTypedef\n */\n\n/**\n * @external {testKindExternal} http://example.com\n */\n\n",
+    "static": true,
+    "longname": "/Users/aumbetov/Desktop/esdoc/test/integration-test/src/Kind/Kind.js",
+    "access": null,
+    "description": null,
+    "lineNumber": 1
+  },
+  {
+    "__docId__": 157,
+    "kind": "class",
+    "name": "TestKindClass",
+    "memberof": "src/Kind/Kind.js",
+    "static": true,
+    "longname": "src/Kind/Kind.js~TestKindClass",
+    "access": null,
+    "export": true,
+    "importPath": "esdoc-test/src/Kind/Kind.js",
+    "importStyle": "{TestKindClass}",
+    "description": null,
+    "lineNumber": 1,
+    "undocument": true,
+    "interface": false
+  },
+  {
+    "__docId__": 158,
+    "kind": "constructor",
+    "name": "constructor",
+    "memberof": "src/Kind/Kind.js~TestKindClass",
+    "generator": false,
+    "async": false,
+    "static": false,
+    "longname": "src/Kind/Kind.js~TestKindClass#constructor",
+    "access": null,
+    "description": null,
+    "lineNumber": 2,
+    "undocument": true
+  },
+  {
+    "__docId__": 159,
+    "kind": "member",
+    "name": "testKindMember",
+    "memberof": "src/Kind/Kind.js~TestKindClass",
+    "static": false,
+    "longname": "src/Kind/Kind.js~TestKindClass#testKindMember",
+    "access": null,
+    "description": null,
+    "lineNumber": 3,
+    "undocument": true
+  },
+  {
+    "__docId__": 160,
+    "kind": "get",
+    "name": "testKindGet",
+    "memberof": "src/Kind/Kind.js~TestKindClass",
+    "generator": false,
+    "async": false,
+    "static": false,
+    "longname": "src/Kind/Kind.js~TestKindClass#testKindGet",
+    "access": null,
+    "description": null,
+    "lineNumber": 6,
+    "undocument": true
+  },
+  {
+    "__docId__": 161,
+    "kind": "set",
+    "name": "testKindSet",
+    "memberof": "src/Kind/Kind.js~TestKindClass",
+    "generator": false,
+    "async": false,
+    "static": false,
+    "longname": "src/Kind/Kind.js~TestKindClass#testKindSet",
+    "access": null,
+    "description": null,
+    "lineNumber": 8,
+    "undocument": true
+  },
+  {
+    "__docId__": 162,
+    "kind": "method",
+    "name": "testKindMethod",
+    "memberof": "src/Kind/Kind.js~TestKindClass",
+    "generator": false,
+    "async": false,
+    "static": false,
+    "longname": "src/Kind/Kind.js~TestKindClass#testKindMethod",
+    "access": null,
+    "description": null,
+    "lineNumber": 10,
+    "undocument": true
+  },
+  {
+    "__docId__": 163,
+    "kind": "function",
+    "name": "testKindFunction",
+    "memberof": "src/Kind/Kind.js",
+    "generator": false,
+    "async": false,
+    "static": true,
+    "longname": "src/Kind/Kind.js~testKindFunction",
+    "access": null,
+    "export": true,
+    "importPath": "esdoc-test/src/Kind/Kind.js",
+    "importStyle": "{testKindFunction}",
+    "description": null,
+    "lineNumber": 13,
+    "undocument": true
+  },
+  {
+    "__docId__": 164,
+    "kind": "variable",
+    "name": "testKindVariable",
+    "memberof": "src/Kind/Kind.js",
+    "static": true,
+    "longname": "src/Kind/Kind.js~testKindVariable",
+    "access": null,
+    "export": true,
+    "importPath": "esdoc-test/src/Kind/Kind.js",
+    "importStyle": "{testKindVariable}",
+    "description": null,
+    "lineNumber": 15,
+    "undocument": true
+  },
+  {
+    "__docId__": 165,
+    "kind": "typedef",
+    "name": "testKindTypedef",
+    "memberof": "src/Kind/Kind.js",
+    "static": true,
+    "longname": "src/Kind/Kind.js~testKindTypedef",
+    "access": null,
+    "description": "",
+    "type": {
+      "types": [
+        "Object"
+      ],
+      "optional": false,
+      "name": "testKindTypedef"
+    }
+  },
+  {
+    "__docId__": 166,
+    "kind": "external",
+    "name": "testKindExternal",
+    "externalLink": "http://example.com",
+    "memberof": "src/Kind/Kind.js",
+    "static": true,
+    "longname": "src/Kind/Kind.js~testKindExternal",
+    "access": null,
+    "description": ""
+  },
+  {
+    "__docId__": 167,
+    "kind": "file",
+    "name": "src/Link/Link.js",
+    "content": "/**\n * {@link TestLinkClass}\n */\nexport default class TestLinkClass {}\n",
+    "static": true,
+    "longname": "/Users/aumbetov/Desktop/esdoc/test/integration-test/src/Link/Link.js",
+    "access": null,
+    "description": null,
+    "lineNumber": 1
+  },
+  {
+    "__docId__": 168,
+    "kind": "class",
+    "name": "TestLinkClass",
+    "memberof": "src/Link/Link.js",
+    "static": true,
+    "longname": "src/Link/Link.js~TestLinkClass",
+    "access": null,
+    "export": true,
+    "importPath": "esdoc-test/src/Link/Link.js",
+    "importStyle": "TestLinkClass",
+    "description": "{@link TestLinkClass}",
+    "lineNumber": 4,
+    "interface": false
+  },
+  {
+    "__docId__": 169,
+    "kind": "file",
+    "name": "src/Listens/Listens.js",
+    "content": "export default class TestListensClass {\n  /**\n   * @listens {TestListensEvent1}\n   * @listens {TestListensEvent2} listens TestListensEvent2\n   */\n  methodListens(){}\n}\n\nexport class TestListensEvent1 {}\nexport class TestListensEvent2 {}\n",
+    "static": true,
+    "longname": "/Users/aumbetov/Desktop/esdoc/test/integration-test/src/Listens/Listens.js",
+    "access": null,
+    "description": null,
+    "lineNumber": 1
+  },
+  {
+    "__docId__": 170,
+    "kind": "class",
+    "name": "TestListensClass",
+    "memberof": "src/Listens/Listens.js",
+    "static": true,
+    "longname": "src/Listens/Listens.js~TestListensClass",
+    "access": null,
+    "export": true,
+    "importPath": "esdoc-test/src/Listens/Listens.js",
+    "importStyle": "TestListensClass",
+    "description": null,
+    "lineNumber": 1,
+    "undocument": true,
+    "interface": false
+  },
+  {
+    "__docId__": 171,
+    "kind": "method",
+    "name": "methodListens",
+    "memberof": "src/Listens/Listens.js~TestListensClass",
+    "generator": false,
+    "async": false,
+    "static": false,
+    "longname": "src/Listens/Listens.js~TestListensClass#methodListens",
+    "access": null,
+    "description": "",
+    "lineNumber": 6,
+    "listens": [
+      {
+        "types": [
+          "TestListensEvent1"
+        ],
+        "description": ""
+      },
+      {
+        "types": [
+          "TestListensEvent2"
+        ],
+        "description": "listens TestListensEvent2"
+      }
+    ]
+  },
+  {
+    "__docId__": 172,
+    "kind": "class",
+    "name": "TestListensEvent1",
+    "memberof": "src/Listens/Listens.js",
+    "static": true,
+    "longname": "src/Listens/Listens.js~TestListensEvent1",
+    "access": null,
+    "export": true,
+    "importPath": "esdoc-test/src/Listens/Listens.js",
+    "importStyle": "{TestListensEvent1}",
+    "description": null,
+    "lineNumber": 9,
+    "undocument": true,
+    "interface": false
+  },
+  {
+    "__docId__": 173,
+    "kind": "class",
+    "name": "TestListensEvent2",
+    "memberof": "src/Listens/Listens.js",
+    "static": true,
+    "longname": "src/Listens/Listens.js~TestListensEvent2",
+    "access": null,
+    "export": true,
+    "importPath": "esdoc-test/src/Listens/Listens.js",
+    "importStyle": "{TestListensEvent2}",
+    "description": null,
+    "lineNumber": 10,
+    "undocument": true,
+    "interface": false
+  },
+  {
+    "__docId__": 174,
+    "kind": "file",
+    "name": "src/Name/Computed.js",
+    "content": "export default class TestNameComputed {\n  constructor(){\n    this[foo.bar] = 123;\n  }\n\n  [foo.baz]() { }\n}\n",
+    "static": true,
+    "longname": "/Users/aumbetov/Desktop/esdoc/test/integration-test/src/Name/Computed.js",
+    "access": null,
+    "description": null,
+    "lineNumber": 1
+  },
+  {
+    "__docId__": 175,
+    "kind": "class",
+    "name": "TestNameComputed",
+    "memberof": "src/Name/Computed.js",
+    "static": true,
+    "longname": "src/Name/Computed.js~TestNameComputed",
+    "access": null,
+    "export": true,
+    "importPath": "esdoc-test/src/Name/Computed.js",
+    "importStyle": "TestNameComputed",
+    "description": null,
+    "lineNumber": 1,
+    "undocument": true,
+    "interface": false
+  },
+  {
+    "__docId__": 176,
+    "kind": "constructor",
+    "name": "constructor",
+    "memberof": "src/Name/Computed.js~TestNameComputed",
+    "generator": false,
+    "async": false,
+    "static": false,
+    "longname": "src/Name/Computed.js~TestNameComputed#constructor",
+    "access": null,
+    "description": null,
+    "lineNumber": 2,
+    "undocument": true
+  },
+  {
+    "__docId__": 177,
+    "kind": "member",
+    "name": "[foo.bar]",
+    "memberof": "src/Name/Computed.js~TestNameComputed",
+    "static": false,
+    "longname": "src/Name/Computed.js~TestNameComputed#[foo.bar]",
+    "access": null,
+    "description": null,
+    "lineNumber": 3,
+    "undocument": true
+  },
+  {
+    "__docId__": 178,
+    "kind": "method",
+    "name": "[foo.baz]",
+    "memberof": "src/Name/Computed.js~TestNameComputed",
+    "generator": false,
+    "async": false,
+    "static": false,
+    "longname": "src/Name/Computed.js~TestNameComputed#[foo.baz]",
+    "access": null,
+    "description": null,
+    "lineNumber": 6,
+    "undocument": true
+  },
+  {
+    "__docId__": 179,
+    "kind": "file",
+    "name": "src/Param/Attribute.js",
+    "content": "export default class TestParamAttribute {\n  // default\n  /**\n   * @param {number} [p1=123]\n   * @param {string[]} [p2=[]]\n   * @param {Foo} [p3 = new Foo()]\n   */\n  methodDefault(p1 = 123, p2 = [], p3 = new Foo()){}\n\n  // nullable\n  /**\n   * @param {?number} p1\n   * @param {!string} p2\n   */\n  methodNullable(p1, p2){}\n\n  // optional\n  /**\n   * @param {number} [p1]\n   */\n  methodOptional(p1){}\n}\n",
+    "static": true,
+    "longname": "/Users/aumbetov/Desktop/esdoc/test/integration-test/src/Param/Attribute.js",
+    "access": null,
+    "description": null,
+    "lineNumber": 1
+  },
+  {
+    "__docId__": 180,
+    "kind": "class",
+    "name": "TestParamAttribute",
+    "memberof": "src/Param/Attribute.js",
+    "static": true,
+    "longname": "src/Param/Attribute.js~TestParamAttribute",
+    "access": null,
+    "export": true,
+    "importPath": "esdoc-test/src/Param/Attribute.js",
+    "importStyle": "TestParamAttribute",
+    "description": null,
+    "lineNumber": 1,
+    "undocument": true,
+    "interface": false
+  },
+  {
+    "__docId__": 181,
+    "kind": "method",
+    "name": "methodDefault",
+    "memberof": "src/Param/Attribute.js~TestParamAttribute",
+    "generator": false,
+    "async": false,
+    "static": false,
+    "longname": "src/Param/Attribute.js~TestParamAttribute#methodDefault",
+    "access": null,
+    "description": "",
+    "lineNumber": 8,
+    "params": [
+      {
+        "nullable": null,
+        "types": [
+          "number"
+        ],
+        "spread": false,
+        "optional": true,
+        "defaultValue": "123",
+        "defaultRaw": 123,
+        "name": "p1",
+        "description": ""
+      },
+      {
+        "nullable": null,
+        "types": [
+          "string[]"
+        ],
+        "spread": false,
+        "optional": true,
+        "defaultValue": "[]",
+        "defaultRaw": [],
+        "name": "p2",
+        "description": ""
+      },
+      {
+        "nullable": null,
+        "types": [
+          "Foo"
+        ],
+        "spread": false,
+        "optional": true,
+        "defaultValue": " new Foo()",
+        "defaultRaw": " new Foo()",
+        "name": "p3",
+        "description": ""
+      }
+    ]
+  },
+  {
+    "__docId__": 182,
+    "kind": "method",
+    "name": "methodNullable",
+    "memberof": "src/Param/Attribute.js~TestParamAttribute",
+    "generator": false,
+    "async": false,
+    "static": false,
+    "longname": "src/Param/Attribute.js~TestParamAttribute#methodNullable",
+    "access": null,
+    "description": "",
+    "lineNumber": 15,
+    "params": [
+      {
+        "nullable": true,
+        "types": [
+          "number"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "p1",
+        "description": ""
+      },
+      {
+        "nullable": false,
+        "types": [
+          "string"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "p2",
+        "description": ""
+      }
+    ]
+  },
+  {
+    "__docId__": 183,
+    "kind": "method",
+    "name": "methodOptional",
+    "memberof": "src/Param/Attribute.js~TestParamAttribute",
+    "generator": false,
+    "async": false,
+    "static": false,
+    "longname": "src/Param/Attribute.js~TestParamAttribute#methodOptional",
+    "access": null,
+    "description": "",
+    "lineNumber": 21,
+    "params": [
+      {
+        "nullable": null,
+        "types": [
+          "number"
+        ],
+        "spread": false,
+        "optional": true,
+        "name": "p1",
+        "description": ""
+      }
+    ]
+  },
+  {
+    "__docId__": 184,
+    "kind": "file",
+    "name": "src/Param/Complex.js",
+    "content": "export default class TestParamComplex {\n  // function\n  /**\n   * @param {function(x1: number[], x2: Map<string, boolean>): Object} p1\n   */\n  methodFunction(p1){}\n\n  // generics\n  /**\n   * @param {Map<number, string[]>} p1\n   */\n  methodGenerics(p1){}\n\n  // record\n  /**\n   * @param {{x1: number[], x2: Map<string, boolean>, x3: {y1: number, y2: string}}} p1\n   */\n  methodRecord(p1){}\n\n  // union\n  /**\n   * @param {?(number|string)} p1\n   * @param {!(number|string)} p2\n   */\n  methodUnion(p1, p2){}\n\n  // union in generics\n  /**\n   * @param {Promise<string|number, Error>} p1\n   */\n  methodUnionAndGenerics(p1){}\n\n  // union with spread\n  /**\n   * @param {...(number|string)} p1\n   */\n  methodUnionAndSpread(...p1){}\n}\n",
+    "static": true,
+    "longname": "/Users/aumbetov/Desktop/esdoc/test/integration-test/src/Param/Complex.js",
+    "access": null,
+    "description": null,
+    "lineNumber": 1
+  },
+  {
+    "__docId__": 185,
+    "kind": "class",
+    "name": "TestParamComplex",
+    "memberof": "src/Param/Complex.js",
+    "static": true,
+    "longname": "src/Param/Complex.js~TestParamComplex",
+    "access": null,
+    "export": true,
+    "importPath": "esdoc-test/src/Param/Complex.js",
+    "importStyle": "TestParamComplex",
+    "description": null,
+    "lineNumber": 1,
+    "undocument": true,
+    "interface": false
+  },
+  {
+    "__docId__": 186,
+    "kind": "method",
+    "name": "methodFunction",
+    "memberof": "src/Param/Complex.js~TestParamComplex",
+    "generator": false,
+    "async": false,
+    "static": false,
+    "longname": "src/Param/Complex.js~TestParamComplex#methodFunction",
+    "access": null,
+    "description": "",
+    "lineNumber": 6,
+    "params": [
+      {
+        "nullable": null,
+        "types": [
+          "function(x1: number[], x2: Map<string, boolean>): Object"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "p1",
+        "description": ""
+      }
+    ]
+  },
+  {
+    "__docId__": 187,
+    "kind": "method",
+    "name": "methodGenerics",
+    "memberof": "src/Param/Complex.js~TestParamComplex",
+    "generator": false,
+    "async": false,
+    "static": false,
+    "longname": "src/Param/Complex.js~TestParamComplex#methodGenerics",
+    "access": null,
+    "description": "",
+    "lineNumber": 12,
+    "params": [
+      {
+        "nullable": null,
+        "types": [
+          "Map<number, string[]>"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "p1",
+        "description": ""
+      }
+    ]
+  },
+  {
+    "__docId__": 188,
+    "kind": "method",
+    "name": "methodRecord",
+    "memberof": "src/Param/Complex.js~TestParamComplex",
+    "generator": false,
+    "async": false,
+    "static": false,
+    "longname": "src/Param/Complex.js~TestParamComplex#methodRecord",
+    "access": null,
+    "description": "",
+    "lineNumber": 18,
+    "params": [
+      {
+        "nullable": null,
+        "types": [
+          "{x1: number[], x2: Map<string, boolean>, x3: {y1: number, y2: string}}"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "p1",
+        "description": ""
+      }
+    ]
+  },
+  {
+    "__docId__": 189,
+    "kind": "method",
+    "name": "methodUnion",
+    "memberof": "src/Param/Complex.js~TestParamComplex",
+    "generator": false,
+    "async": false,
+    "static": false,
+    "longname": "src/Param/Complex.js~TestParamComplex#methodUnion",
+    "access": null,
+    "description": "",
+    "lineNumber": 25,
+    "params": [
+      {
+        "nullable": true,
+        "types": [
+          "number",
+          "string"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "p1",
+        "description": ""
+      },
+      {
+        "nullable": false,
+        "types": [
+          "number",
+          "string"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "p2",
+        "description": ""
+      }
+    ]
+  },
+  {
+    "__docId__": 190,
+    "kind": "method",
+    "name": "methodUnionAndGenerics",
+    "memberof": "src/Param/Complex.js~TestParamComplex",
+    "generator": false,
+    "async": false,
+    "static": false,
+    "longname": "src/Param/Complex.js~TestParamComplex#methodUnionAndGenerics",
+    "access": null,
+    "description": "",
+    "lineNumber": 31,
+    "params": [
+      {
+        "nullable": null,
+        "types": [
+          "Promise<string|number, Error>"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "p1",
+        "description": ""
+      }
+    ]
+  },
+  {
+    "__docId__": 191,
+    "kind": "method",
+    "name": "methodUnionAndSpread",
+    "memberof": "src/Param/Complex.js~TestParamComplex",
+    "generator": false,
+    "async": false,
+    "static": false,
+    "longname": "src/Param/Complex.js~TestParamComplex#methodUnionAndSpread",
+    "access": null,
+    "description": "",
+    "lineNumber": 37,
+    "params": [
+      {
+        "nullable": null,
+        "types": [
+          "...(number|string)"
+        ],
+        "spread": true,
+        "optional": false,
+        "name": "p1",
+        "description": ""
+      }
+    ]
+  },
+  {
+    "__docId__": 192,
+    "kind": "file",
+    "name": "src/Param/Destructuring.js",
+    "content": "export class TestParamDestructuring {\n  /**\n   * @param {number[]} p\n   * @param {number} p[0]\n   * @param {number} p[1]\n   */\n  methodArray([p1, p2]){}\n\n  /**\n   * @param {Object} p\n   * @param {number} p.p1\n   * @param {string} p.p2\n   */\n  methodObject({p1, p2}){}\n}\n",
+    "static": true,
+    "longname": "/Users/aumbetov/Desktop/esdoc/test/integration-test/src/Param/Destructuring.js",
+    "access": null,
+    "description": null,
+    "lineNumber": 1
+  },
+  {
+    "__docId__": 193,
+    "kind": "class",
+    "name": "TestParamDestructuring",
+    "memberof": "src/Param/Destructuring.js",
+    "static": true,
+    "longname": "src/Param/Destructuring.js~TestParamDestructuring",
+    "access": null,
+    "export": true,
+    "importPath": "esdoc-test/src/Param/Destructuring.js",
+    "importStyle": "{TestParamDestructuring}",
+    "description": null,
+    "lineNumber": 1,
+    "undocument": true,
+    "interface": false
+  },
+  {
+    "__docId__": 194,
+    "kind": "method",
+    "name": "methodArray",
+    "memberof": "src/Param/Destructuring.js~TestParamDestructuring",
+    "generator": false,
+    "async": false,
+    "static": false,
+    "longname": "src/Param/Destructuring.js~TestParamDestructuring#methodArray",
+    "access": null,
+    "description": "",
+    "lineNumber": 7,
+    "params": [
+      {
+        "nullable": null,
+        "types": [
+          "number[]"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "p",
+        "description": ""
+      },
+      {
+        "nullable": null,
+        "types": [
+          "number"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "p[0]",
+        "description": ""
+      },
+      {
+        "nullable": null,
+        "types": [
+          "number"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "p[1]",
+        "description": ""
+      }
+    ]
+  },
+  {
+    "__docId__": 195,
+    "kind": "method",
+    "name": "methodObject",
+    "memberof": "src/Param/Destructuring.js~TestParamDestructuring",
+    "generator": false,
+    "async": false,
+    "static": false,
+    "longname": "src/Param/Destructuring.js~TestParamDestructuring#methodObject",
+    "access": null,
+    "description": "",
+    "lineNumber": 14,
+    "params": [
+      {
+        "nullable": null,
+        "types": [
+          "Object"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "p",
+        "description": ""
+      },
+      {
+        "nullable": null,
+        "types": [
+          "number"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "p.p1",
+        "description": ""
+      },
+      {
+        "nullable": null,
+        "types": [
+          "string"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "p.p2",
+        "description": ""
+      }
+    ]
+  },
+  {
+    "__docId__": 196,
+    "kind": "file",
+    "name": "src/Param/Param.js",
+    "content": "export default class TestParam {\n  /**\n   * @param {number} p1 - this is p1\n   */\n  method(p1) {}\n}\n",
+    "static": true,
+    "longname": "/Users/aumbetov/Desktop/esdoc/test/integration-test/src/Param/Param.js",
+    "access": null,
+    "description": null,
+    "lineNumber": 1
+  },
+  {
+    "__docId__": 197,
+    "kind": "class",
+    "name": "TestParam",
+    "memberof": "src/Param/Param.js",
+    "static": true,
+    "longname": "src/Param/Param.js~TestParam",
+    "access": null,
+    "export": true,
+    "importPath": "esdoc-test/src/Param/Param.js",
+    "importStyle": "TestParam",
+    "description": null,
+    "lineNumber": 1,
+    "undocument": true,
+    "interface": false
+  },
+  {
+    "__docId__": 198,
+    "kind": "method",
+    "name": "method",
+    "memberof": "src/Param/Param.js~TestParam",
+    "generator": false,
+    "async": false,
+    "static": false,
+    "longname": "src/Param/Param.js~TestParam#method",
+    "access": null,
+    "description": "",
+    "lineNumber": 5,
+    "params": [
+      {
+        "nullable": null,
+        "types": [
+          "number"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "p1",
+        "description": "this is p1"
+      }
+    ]
+  },
+  {
+    "__docId__": 199,
+    "kind": "file",
+    "name": "src/Param/Type.js",
+    "content": "export default class TestParam {\n  // array\n  /**\n   * @param {number[]} p1\n   */\n  methodArray(p1){}\n\n  // class\n  /**\n   * @param {TestParamClassInner} p1\n   */\n  methodClass(p1){}\n\n  // external\n  /**\n   * @param {ArrayBuffer} p1\n   */\n  methodExternal(p1){}\n\n  // function\n  /**\n   * @param {function(x1: number, x2: string): boolean} p1\n   */\n  methodFunction(p1){}\n\n  // generics\n  /**\n   * @param {Array<number>} p1\n   * @param {Map<number, string>} p2\n   * @param {Promise<number[], Error>} p3\n   */\n  methodGenerics(p1, p2, p3){}\n\n  // literal\n  /**\n   * @param {number} p1\n   */\n  methodLiteral(p1){}\n\n  // object\n  /**\n   * @param {Object} p1\n   * @param {number} p1.x1\n   */\n  methodObject(p1){}\n\n  // record\n  /**\n   * @param {{x1: number, x2: string}} p1\n   */\n  methodRecord(p1){}\n\n  // spread\n  /**\n   * @param {...number} p1\n   */\n  methodSpread(...p1){}\n\n  // typedef\n  /**\n   * @param {TestTypeTypedefInner} p1\n   */\n  methodTypedef(p1){}\n\n  // union\n  /**\n   * @param {number|string} p1\n   */\n  methodUnion(p1){}\n}\n\nexport class TestParamClassInner {}\n\n/**\n * @external {ArrayBuffer} http://example.com\n */\n\n/**\n * @typedef {Object} TestTypeTypedefInner\n */\n\n",
+    "static": true,
+    "longname": "/Users/aumbetov/Desktop/esdoc/test/integration-test/src/Param/Type.js",
+    "access": null,
+    "description": null,
+    "lineNumber": 1
+  },
+  {
+    "__docId__": 200,
+    "kind": "class",
+    "name": "TestParam",
+    "memberof": "src/Param/Type.js",
+    "static": true,
+    "longname": "src/Param/Type.js~TestParam",
+    "access": null,
+    "export": true,
+    "importPath": "esdoc-test/src/Param/Type.js",
+    "importStyle": "TestParam",
+    "description": null,
+    "lineNumber": 1,
+    "undocument": true,
+    "interface": false
+  },
+  {
+    "__docId__": 201,
+    "kind": "method",
+    "name": "methodArray",
+    "memberof": "src/Param/Type.js~TestParam",
+    "generator": false,
+    "async": false,
+    "static": false,
+    "longname": "src/Param/Type.js~TestParam#methodArray",
+    "access": null,
+    "description": "",
+    "lineNumber": 6,
+    "params": [
+      {
+        "nullable": null,
+        "types": [
+          "number[]"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "p1",
+        "description": ""
+      }
+    ]
+  },
+  {
+    "__docId__": 202,
+    "kind": "method",
+    "name": "methodClass",
+    "memberof": "src/Param/Type.js~TestParam",
+    "generator": false,
+    "async": false,
+    "static": false,
+    "longname": "src/Param/Type.js~TestParam#methodClass",
+    "access": null,
+    "description": "",
+    "lineNumber": 12,
+    "params": [
+      {
+        "nullable": null,
+        "types": [
+          "TestParamClassInner"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "p1",
+        "description": ""
+      }
+    ]
+  },
+  {
+    "__docId__": 203,
+    "kind": "method",
+    "name": "methodExternal",
+    "memberof": "src/Param/Type.js~TestParam",
+    "generator": false,
+    "async": false,
+    "static": false,
+    "longname": "src/Param/Type.js~TestParam#methodExternal",
+    "access": null,
+    "description": "",
+    "lineNumber": 18,
+    "params": [
+      {
+        "nullable": null,
+        "types": [
+          "ArrayBuffer"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "p1",
+        "description": ""
+      }
+    ]
+  },
+  {
+    "__docId__": 204,
+    "kind": "method",
+    "name": "methodFunction",
+    "memberof": "src/Param/Type.js~TestParam",
+    "generator": false,
+    "async": false,
+    "static": false,
+    "longname": "src/Param/Type.js~TestParam#methodFunction",
+    "access": null,
+    "description": "",
+    "lineNumber": 24,
+    "params": [
+      {
+        "nullable": null,
+        "types": [
+          "function(x1: number, x2: string): boolean"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "p1",
+        "description": ""
+      }
+    ]
+  },
+  {
+    "__docId__": 205,
+    "kind": "method",
+    "name": "methodGenerics",
+    "memberof": "src/Param/Type.js~TestParam",
+    "generator": false,
+    "async": false,
+    "static": false,
+    "longname": "src/Param/Type.js~TestParam#methodGenerics",
+    "access": null,
+    "description": "",
+    "lineNumber": 32,
+    "params": [
+      {
+        "nullable": null,
+        "types": [
+          "Array<number>"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "p1",
+        "description": ""
+      },
+      {
+        "nullable": null,
+        "types": [
+          "Map<number, string>"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "p2",
+        "description": ""
+      },
+      {
+        "nullable": null,
+        "types": [
+          "Promise<number[], Error>"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "p3",
+        "description": ""
+      }
+    ]
+  },
+  {
+    "__docId__": 206,
+    "kind": "method",
+    "name": "methodLiteral",
+    "memberof": "src/Param/Type.js~TestParam",
+    "generator": false,
+    "async": false,
+    "static": false,
+    "longname": "src/Param/Type.js~TestParam#methodLiteral",
+    "access": null,
+    "description": "",
+    "lineNumber": 38,
+    "params": [
+      {
+        "nullable": null,
+        "types": [
+          "number"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "p1",
+        "description": ""
+      }
+    ]
+  },
+  {
+    "__docId__": 207,
+    "kind": "method",
+    "name": "methodObject",
+    "memberof": "src/Param/Type.js~TestParam",
+    "generator": false,
+    "async": false,
+    "static": false,
+    "longname": "src/Param/Type.js~TestParam#methodObject",
+    "access": null,
+    "description": "",
+    "lineNumber": 45,
+    "params": [
+      {
+        "nullable": null,
+        "types": [
+          "Object"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "p1",
+        "description": ""
+      },
+      {
+        "nullable": null,
+        "types": [
+          "number"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "p1.x1",
+        "description": ""
+      }
+    ]
+  },
+  {
+    "__docId__": 208,
+    "kind": "method",
+    "name": "methodRecord",
+    "memberof": "src/Param/Type.js~TestParam",
+    "generator": false,
+    "async": false,
+    "static": false,
+    "longname": "src/Param/Type.js~TestParam#methodRecord",
+    "access": null,
+    "description": "",
+    "lineNumber": 51,
+    "params": [
+      {
+        "nullable": null,
+        "types": [
+          "{x1: number, x2: string}"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "p1",
+        "description": ""
+      }
+    ]
+  },
+  {
+    "__docId__": 209,
+    "kind": "method",
+    "name": "methodSpread",
+    "memberof": "src/Param/Type.js~TestParam",
+    "generator": false,
+    "async": false,
+    "static": false,
+    "longname": "src/Param/Type.js~TestParam#methodSpread",
+    "access": null,
+    "description": "",
+    "lineNumber": 57,
+    "params": [
+      {
+        "nullable": null,
+        "types": [
+          "...number"
+        ],
+        "spread": true,
+        "optional": false,
+        "name": "p1",
+        "description": ""
+      }
+    ]
+  },
+  {
+    "__docId__": 210,
+    "kind": "method",
+    "name": "methodTypedef",
+    "memberof": "src/Param/Type.js~TestParam",
+    "generator": false,
+    "async": false,
+    "static": false,
+    "longname": "src/Param/Type.js~TestParam#methodTypedef",
+    "access": null,
+    "description": "",
+    "lineNumber": 63,
+    "params": [
+      {
+        "nullable": null,
+        "types": [
+          "TestTypeTypedefInner"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "p1",
+        "description": ""
+      }
+    ]
+  },
+  {
+    "__docId__": 211,
+    "kind": "method",
+    "name": "methodUnion",
+    "memberof": "src/Param/Type.js~TestParam",
+    "generator": false,
+    "async": false,
+    "static": false,
+    "longname": "src/Param/Type.js~TestParam#methodUnion",
+    "access": null,
+    "description": "",
+    "lineNumber": 69,
+    "params": [
+      {
+        "nullable": null,
+        "types": [
+          "number",
+          "string"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "p1",
+        "description": ""
+      }
+    ]
+  },
+  {
+    "__docId__": 212,
+    "kind": "class",
+    "name": "TestParamClassInner",
+    "memberof": "src/Param/Type.js",
+    "static": true,
+    "longname": "src/Param/Type.js~TestParamClassInner",
+    "access": null,
+    "export": true,
+    "importPath": "esdoc-test/src/Param/Type.js",
+    "importStyle": "{TestParamClassInner}",
+    "description": null,
+    "lineNumber": 72,
+    "undocument": true,
+    "interface": false
+  },
+  {
+    "__docId__": 213,
+    "kind": "external",
+    "name": "ArrayBuffer",
+    "externalLink": "http://example.com",
+    "memberof": "src/Param/Type.js",
+    "static": true,
+    "longname": "src/Param/Type.js~ArrayBuffer",
+    "access": null,
+    "description": ""
+  },
+  {
+    "__docId__": 214,
+    "kind": "typedef",
+    "name": "TestTypeTypedefInner",
+    "memberof": "src/Param/Type.js",
+    "static": true,
+    "longname": "src/Param/Type.js~TestTypeTypedefInner",
+    "access": null,
+    "description": "",
+    "type": {
+      "types": [
+        "Object"
+      ],
+      "optional": false,
+      "name": "TestTypeTypedefInner"
+    }
+  },
+  {
+    "__docId__": 215,
+    "kind": "file",
+    "name": "src/Property/Property.js",
+    "content": "export default class TestProperty {\n  /**\n   * @return {Object}\n   * @property {number} x1\n   * @property {TestPropertyInner} x2\n   */\n  methodProperty(){\n    return {};\n  }\n}\n",
+    "static": true,
+    "longname": "/Users/aumbetov/Desktop/esdoc/test/integration-test/src/Property/Property.js",
+    "access": null,
+    "description": null,
+    "lineNumber": 1
+  },
+  {
+    "__docId__": 216,
+    "kind": "class",
+    "name": "TestProperty",
+    "memberof": "src/Property/Property.js",
+    "static": true,
+    "longname": "src/Property/Property.js~TestProperty",
+    "access": null,
+    "export": true,
+    "importPath": "esdoc-test/src/Property/Property.js",
+    "importStyle": "TestProperty",
+    "description": null,
+    "lineNumber": 1,
+    "undocument": true,
+    "interface": false
+  },
+  {
+    "__docId__": 217,
+    "kind": "method",
+    "name": "methodProperty",
+    "memberof": "src/Property/Property.js~TestProperty",
+    "generator": false,
+    "async": false,
+    "static": false,
+    "longname": "src/Property/Property.js~TestProperty#methodProperty",
+    "access": null,
+    "description": "",
+    "lineNumber": 7,
+    "properties": [
+      {
+        "nullable": null,
+        "types": [
+          "number"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "x1",
+        "description": ""
+      },
+      {
+        "nullable": null,
+        "types": [
+          "TestPropertyInner"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "x2",
+        "description": ""
+      }
+    ],
+    "return": {
+      "nullable": null,
+      "types": [
+        "Object"
+      ],
+      "spread": false,
+      "description": ""
+    }
+  },
+  {
+    "__docId__": 218,
+    "kind": "file",
+    "name": "src/Return/Return.js",
+    "content": "export default class TestReturn {\n  /**\n   * @returns {number} - this is return value.\n   */\n  methodReturn(){\n    return 123;\n  }\n}\n",
+    "static": true,
+    "longname": "/Users/aumbetov/Desktop/esdoc/test/integration-test/src/Return/Return.js",
+    "access": null,
+    "description": null,
+    "lineNumber": 1
+  },
+  {
+    "__docId__": 219,
+    "kind": "class",
+    "name": "TestReturn",
+    "memberof": "src/Return/Return.js",
+    "static": true,
+    "longname": "src/Return/Return.js~TestReturn",
+    "access": null,
+    "export": true,
+    "importPath": "esdoc-test/src/Return/Return.js",
+    "importStyle": "TestReturn",
+    "description": null,
+    "lineNumber": 1,
+    "undocument": true,
+    "interface": false
+  },
+  {
+    "__docId__": 220,
+    "kind": "method",
+    "name": "methodReturn",
+    "memberof": "src/Return/Return.js~TestReturn",
+    "generator": false,
+    "async": false,
+    "static": false,
+    "longname": "src/Return/Return.js~TestReturn#methodReturn",
+    "access": null,
+    "description": "",
+    "lineNumber": 5,
+    "unknown": [
+      {
+        "tagName": "@returns",
+        "tagValue": "{number} - this is return value."
+      }
+    ],
+    "return": {
+      "nullable": null,
+      "types": [
+        "number"
+      ],
+      "spread": false,
+      "description": "this is return value."
+    }
+  },
+  {
+    "__docId__": 221,
+    "kind": "file",
+    "name": "src/See/See.js",
+    "content": "/**\n * @see http://foo.example.com\n * @see http://bar.example.com\n */\nexport default class TestSeeClass {\n}\n",
+    "static": true,
+    "longname": "/Users/aumbetov/Desktop/esdoc/test/integration-test/src/See/See.js",
+    "access": null,
+    "description": null,
+    "lineNumber": 1
+  },
+  {
+    "__docId__": 222,
+    "kind": "class",
+    "name": "TestSeeClass",
+    "memberof": "src/See/See.js",
+    "static": true,
+    "longname": "src/See/See.js~TestSeeClass",
+    "access": null,
+    "export": true,
+    "importPath": "esdoc-test/src/See/See.js",
+    "importStyle": "TestSeeClass",
+    "description": "",
+    "see": [
+      "http://foo.example.com",
+      "http://bar.example.com"
+    ],
+    "lineNumber": 5,
+    "interface": false
+  },
+  {
+    "__docId__": 223,
+    "kind": "file",
+    "name": "src/Since/Since.js",
+    "content": "/**\n * @since 1.2.3\n */\nexport default class TestSince {\n}\n",
+    "static": true,
+    "longname": "/Users/aumbetov/Desktop/esdoc/test/integration-test/src/Since/Since.js",
+    "access": null,
+    "description": null,
+    "lineNumber": 1
+  },
+  {
+    "__docId__": 224,
+    "kind": "class",
+    "name": "TestSince",
+    "memberof": "src/Since/Since.js",
+    "static": true,
+    "longname": "src/Since/Since.js~TestSince",
+    "access": null,
+    "export": true,
+    "importPath": "esdoc-test/src/Since/Since.js",
+    "importStyle": "TestSince",
+    "description": "",
+    "lineNumber": 4,
+    "since": "1.2.3",
+    "interface": false
+  },
+  {
+    "__docId__": 225,
+    "kind": "file",
+    "name": "src/Throws/Throws.js",
+    "content": "export default class TestThrows {\n  /**\n   * @throws {TestThrowsError1}\n   * @throws {TestThrowsError2} throws error\n   */\n  methodThrows(){}\n}\n\nexport class TestThrowsError1 {}\nexport class TestThrowsError2 {}\n",
+    "static": true,
+    "longname": "/Users/aumbetov/Desktop/esdoc/test/integration-test/src/Throws/Throws.js",
+    "access": null,
+    "description": null,
+    "lineNumber": 1
+  },
+  {
+    "__docId__": 226,
+    "kind": "class",
+    "name": "TestThrows",
+    "memberof": "src/Throws/Throws.js",
+    "static": true,
+    "longname": "src/Throws/Throws.js~TestThrows",
+    "access": null,
+    "export": true,
+    "importPath": "esdoc-test/src/Throws/Throws.js",
+    "importStyle": "TestThrows",
+    "description": null,
+    "lineNumber": 1,
+    "undocument": true,
+    "interface": false
+  },
+  {
+    "__docId__": 227,
+    "kind": "method",
+    "name": "methodThrows",
+    "memberof": "src/Throws/Throws.js~TestThrows",
+    "generator": false,
+    "async": false,
+    "static": false,
+    "longname": "src/Throws/Throws.js~TestThrows#methodThrows",
+    "access": null,
+    "description": "",
+    "lineNumber": 6,
+    "throws": [
+      {
+        "types": [
+          "TestThrowsError1"
+        ],
+        "description": ""
+      },
+      {
+        "types": [
+          "TestThrowsError2"
+        ],
+        "description": "throws error"
+      }
+    ]
+  },
+  {
+    "__docId__": 228,
+    "kind": "class",
+    "name": "TestThrowsError1",
+    "memberof": "src/Throws/Throws.js",
+    "static": true,
+    "longname": "src/Throws/Throws.js~TestThrowsError1",
+    "access": null,
+    "export": true,
+    "importPath": "esdoc-test/src/Throws/Throws.js",
+    "importStyle": "{TestThrowsError1}",
+    "description": null,
+    "lineNumber": 9,
+    "undocument": true,
+    "interface": false
+  },
+  {
+    "__docId__": 229,
+    "kind": "class",
+    "name": "TestThrowsError2",
+    "memberof": "src/Throws/Throws.js",
+    "static": true,
+    "longname": "src/Throws/Throws.js~TestThrowsError2",
+    "access": null,
+    "export": true,
+    "importPath": "esdoc-test/src/Throws/Throws.js",
+    "importStyle": "{TestThrowsError2}",
+    "description": null,
+    "lineNumber": 10,
+    "undocument": true,
+    "interface": false
+  },
+  {
+    "__docId__": 230,
+    "kind": "file",
+    "name": "src/Todo/Todo.js",
+    "content": "/**\n * @todo this is first todo.\n * @todo this is second todo.\n */\nexport default class TestTodo { }\n",
+    "static": true,
+    "longname": "/Users/aumbetov/Desktop/esdoc/test/integration-test/src/Todo/Todo.js",
+    "access": null,
+    "description": null,
+    "lineNumber": 1
+  },
+  {
+    "__docId__": 231,
+    "kind": "class",
+    "name": "TestTodo",
+    "memberof": "src/Todo/Todo.js",
+    "static": true,
+    "longname": "src/Todo/Todo.js~TestTodo",
+    "access": null,
+    "export": true,
+    "importPath": "esdoc-test/src/Todo/Todo.js",
+    "importStyle": "TestTodo",
+    "description": "",
+    "lineNumber": 5,
+    "todo": [
+      "this is first todo.",
+      "this is second todo."
+    ],
+    "interface": false
+  },
+  {
+    "__docId__": 232,
+    "kind": "file",
+    "name": "src/Type/Type.js",
+    "content": "export class TestType {\n  constructor() {\n    /**\n     * @type {number}\n     */\n    this.member = 123;\n  }\n}\n\n/**\n * @type {number}\n */\nexport const testTypeVariable = 123;\n",
+    "static": true,
+    "longname": "/Users/aumbetov/Desktop/esdoc/test/integration-test/src/Type/Type.js",
+    "access": null,
+    "description": null,
+    "lineNumber": 1
+  },
+  {
+    "__docId__": 233,
+    "kind": "class",
+    "name": "TestType",
+    "memberof": "src/Type/Type.js",
+    "static": true,
+    "longname": "src/Type/Type.js~TestType",
+    "access": null,
+    "export": true,
+    "importPath": "esdoc-test/src/Type/Type.js",
+    "importStyle": "{TestType}",
+    "description": null,
+    "lineNumber": 1,
+    "undocument": true,
+    "interface": false
+  },
+  {
+    "__docId__": 234,
+    "kind": "constructor",
+    "name": "constructor",
+    "memberof": "src/Type/Type.js~TestType",
+    "generator": false,
+    "async": false,
+    "static": false,
+    "longname": "src/Type/Type.js~TestType#constructor",
+    "access": null,
+    "description": null,
+    "lineNumber": 2,
+    "undocument": true
+  },
+  {
+    "__docId__": 235,
+    "kind": "member",
+    "name": "member",
+    "memberof": "src/Type/Type.js~TestType",
+    "static": false,
+    "longname": "src/Type/Type.js~TestType#member",
+    "access": null,
+    "description": "",
+    "lineNumber": 6,
+    "type": {
+      "nullable": null,
+      "types": [
+        "number"
+      ],
+      "spread": false,
+      "description": null
+    }
+  },
+  {
+    "__docId__": 236,
+    "kind": "variable",
+    "name": "testTypeVariable",
+    "memberof": "src/Type/Type.js",
+    "static": true,
+    "longname": "src/Type/Type.js~testTypeVariable",
+    "access": null,
+    "export": true,
+    "importPath": "esdoc-test/src/Type/Type.js",
+    "importStyle": "{testTypeVariable}",
+    "description": "",
+    "lineNumber": 13,
+    "type": {
+      "nullable": null,
+      "types": [
+        "number"
+      ],
+      "spread": false,
+      "description": null
+    }
+  },
+  {
+    "__docId__": 237,
+    "kind": "file",
+    "name": "src/Undocument/Undocument.js",
+    "content": "export default class TestUndocument {}\n",
+    "static": true,
+    "longname": "/Users/aumbetov/Desktop/esdoc/test/integration-test/src/Undocument/Undocument.js",
+    "access": null,
+    "description": null,
+    "lineNumber": 1
+  },
+  {
+    "__docId__": 238,
+    "kind": "class",
+    "name": "TestUndocument",
+    "memberof": "src/Undocument/Undocument.js",
+    "static": true,
+    "longname": "src/Undocument/Undocument.js~TestUndocument",
+    "access": null,
+    "export": true,
+    "importPath": "esdoc-test/src/Undocument/Undocument.js",
+    "importStyle": "TestUndocument",
+    "description": null,
+    "lineNumber": 1,
+    "undocument": true,
+    "interface": false
+  },
+  {
+    "__docId__": 239,
+    "kind": "file",
+    "name": "src/Unknown/Unknown.js",
+    "content": "/**\n * @foobar this is unknown tag.\n */\nexport default class TestUnknown {}\n",
+    "static": true,
+    "longname": "/Users/aumbetov/Desktop/esdoc/test/integration-test/src/Unknown/Unknown.js",
+    "access": null,
+    "description": null,
+    "lineNumber": 1
+  },
+  {
+    "__docId__": 240,
+    "kind": "class",
+    "name": "TestUnknown",
+    "memberof": "src/Unknown/Unknown.js",
+    "static": true,
+    "longname": "src/Unknown/Unknown.js~TestUnknown",
+    "access": null,
+    "export": true,
+    "importPath": "esdoc-test/src/Unknown/Unknown.js",
+    "importStyle": "TestUnknown",
+    "description": "",
+    "lineNumber": 4,
+    "unknown": [
+      {
+        "tagName": "@foobar",
+        "tagValue": "this is unknown tag."
+      }
+    ],
+    "interface": false
+  },
+  {
+    "__docId__": 241,
+    "kind": "file",
+    "name": "src/Version/Version.js",
+    "content": "/**\n * @version 1.2.3\n */\nexport default class TestVersion {}\n",
+    "static": true,
+    "longname": "/Users/aumbetov/Desktop/esdoc/test/integration-test/src/Version/Version.js",
+    "access": null,
+    "description": null,
+    "lineNumber": 1
+  },
+  {
+    "__docId__": 242,
+    "kind": "class",
+    "name": "TestVersion",
+    "memberof": "src/Version/Version.js",
+    "static": true,
+    "longname": "src/Version/Version.js~TestVersion",
+    "access": null,
+    "export": true,
+    "importPath": "esdoc-test/src/Version/Version.js",
+    "importStyle": "TestVersion",
+    "description": "",
+    "lineNumber": 4,
+    "version": "1.2.3",
+    "interface": false
+  },
+  {
+    "__docId__": 243,
+    "kind": "file",
+    "name": "src/_Misc/Duplication.js",
+    "content": "export class TestDuplication {\n  constructor() {\n    /** @type {number} */\n    this.member = 1;\n\n    /** @type {string} */\n    this.member = 'b';\n\n    /** @type {boolean} */\n    this.member = true;\n  }\n}\n",
+    "static": true,
+    "longname": "/Users/aumbetov/Desktop/esdoc/test/integration-test/src/_Misc/Duplication.js",
+    "access": null,
+    "description": null,
+    "lineNumber": 1
+  },
+  {
+    "__docId__": 244,
+    "kind": "class",
+    "name": "TestDuplication",
+    "memberof": "src/_Misc/Duplication.js",
+    "static": true,
+    "longname": "src/_Misc/Duplication.js~TestDuplication",
+    "access": null,
+    "export": true,
+    "importPath": "esdoc-test/src/_Misc/Duplication.js",
+    "importStyle": "{TestDuplication}",
+    "description": null,
+    "lineNumber": 1,
+    "undocument": true,
+    "interface": false
+  },
+  {
+    "__docId__": 245,
+    "kind": "constructor",
+    "name": "constructor",
+    "memberof": "src/_Misc/Duplication.js~TestDuplication",
+    "generator": false,
+    "async": false,
+    "static": false,
+    "longname": "src/_Misc/Duplication.js~TestDuplication#constructor",
+    "access": null,
+    "description": null,
+    "lineNumber": 2,
+    "undocument": true
+  },
+  {
+    "__docId__": 246,
+    "kind": "member",
+    "name": "member",
+    "memberof": "src/_Misc/Duplication.js~TestDuplication",
+    "static": false,
+    "longname": "src/_Misc/Duplication.js~TestDuplication#member",
+    "access": null,
+    "description": null,
+    "lineNumber": 4,
+    "type": {
+      "nullable": null,
+      "types": [
+        "number"
+      ],
+      "spread": false,
+      "description": null
+    }
+  },
+  {
+    "__docId__": 249,
+    "kind": "file",
+    "name": "src/_Misc/EmptyForPlugin.js",
+    "content": "",
+    "static": true,
+    "longname": "/Users/aumbetov/Desktop/esdoc/test/integration-test/src/_Misc/EmptyForPlugin.js",
+    "access": null,
+    "description": null,
+    "lineNumber": 1
+  },
+  {
+    "__docId__": 250,
+    "kind": "class",
+    "name": "EmptyForPlugin_Modified1_Modified2",
+    "memberof": "src/_Misc/EmptyForPlugin.js",
+    "static": true,
+    "longname": "src/_Misc/EmptyForPlugin.js~EmptyForPlugin_Modified1_Modified2",
+    "access": null,
+    "export": true,
+    "importPath": "esdoc-test/src/_Misc/EmptyForPlugin.js",
+    "importStyle": "{EmptyForPlugin_Modified1}",
+    "description": null,
+    "lineNumber": 1,
+    "undocument": true,
+    "interface": false
+  },
+  {
+    "__docId__": 251,
+    "kind": "file",
+    "name": "src/_Misc/InvalidSyntaxDoc.js",
+    "content": "/**\n * @param {} p\n */\nfunction testInvalidCodeSyntax(p){}\n",
+    "static": true,
+    "longname": "/Users/aumbetov/Desktop/esdoc/test/integration-test/src/_Misc/InvalidSyntaxDoc.js",
+    "access": null,
+    "description": null,
+    "lineNumber": 1
+  },
+  {
+    "__docId__": 252,
+    "kind": "function",
+    "name": "testInvalidCodeSyntax",
+    "memberof": "src/_Misc/InvalidSyntaxDoc.js",
+    "generator": false,
+    "async": false,
+    "static": true,
+    "longname": "src/_Misc/InvalidSyntaxDoc.js~testInvalidCodeSyntax",
+    "access": null,
+    "export": false,
+    "importPath": "esdoc-test/src/_Misc/InvalidSyntaxDoc.js",
+    "importStyle": null,
+    "description": "",
+    "lineNumber": 4,
+    "params": []
+  },
+  {
+    "kind": "index",
+    "content": "# ESDoc Test\n",
+    "longname": "/Users/aumbetov/Desktop/esdoc/test/integration-test/README.md",
+    "name": "./test/integration-test/README.md",
+    "static": true,
+    "access": "public"
+  },
+  {
+    "kind": "packageJSON",
+    "content": "{\n  \"name\": \"esdoc-test\",\n  \"version\": \"1.2.3\",\n  \"repository\": {\n    \"type\": \"git\",\n    \"url\": \"https://github.com/esdoc/esdoc\"\n  },\n  \"main\": \"./src/Desc/Desc.js\"\n}\n",
+    "longname": "/Users/aumbetov/Desktop/esdoc/test/integration-test/package.json",
+    "name": "package.json",
+    "static": true,
+    "access": "public"
+  }
+]

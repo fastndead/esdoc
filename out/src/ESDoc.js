@@ -1,13 +1,50 @@
-import fs from 'fs-extra';
-import path from 'path';
-import assert from 'assert';
-import logger from 'color-logger';
-import ASTUtil from './Util/ASTUtil.js';
-import ESParser from './Parser/ESParser';
-import PathResolver from './Util/PathResolver.js';
-import DocFactory from './Factory/DocFactory.js';
-import InvalidCodeLogger from './Util/InvalidCodeLogger.js';
-import Plugin from './Plugin/Plugin.js';
+'use strict';
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+
+var _fsExtra = require('fs-extra');
+
+var _fsExtra2 = _interopRequireDefault(_fsExtra);
+
+var _path = require('path');
+
+var _path2 = _interopRequireDefault(_path);
+
+var _assert = require('assert');
+
+var _assert2 = _interopRequireDefault(_assert);
+
+var _colorLogger = require('color-logger');
+
+var _colorLogger2 = _interopRequireDefault(_colorLogger);
+
+var _ASTUtil = require('./Util/ASTUtil.js');
+
+var _ASTUtil2 = _interopRequireDefault(_ASTUtil);
+
+var _ESParser = require('./Parser/ESParser');
+
+var _ESParser2 = _interopRequireDefault(_ESParser);
+
+var _PathResolver = require('./Util/PathResolver.js');
+
+var _PathResolver2 = _interopRequireDefault(_PathResolver);
+
+var _DocFactory = require('./Factory/DocFactory.js');
+
+var _DocFactory2 = _interopRequireDefault(_DocFactory);
+
+var _InvalidCodeLogger = require('./Util/InvalidCodeLogger.js');
+
+var _InvalidCodeLogger2 = _interopRequireDefault(_InvalidCodeLogger);
+
+var _Plugin = require('./Plugin/Plugin.js');
+
+var _Plugin2 = _interopRequireDefault(_Plugin);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 /**
  * API Documentation Generator.
@@ -18,32 +55,32 @@ import Plugin from './Plugin/Plugin.js';
  *   console.log(results);
  * });
  */
-export default class ESDoc {
+class ESDoc {
   /**
    * Generate documentation.
    * @param {ESDocConfig} config - config for generation.
    */
   static generate(config) {
-    assert(config.source);
-    assert(config.destination);
+    (0, _assert2.default)(config.source);
+    (0, _assert2.default)(config.destination);
 
     this._checkOldConfig(config);
 
-    Plugin.init(config.plugins);
-    Plugin.onStart();
-    config = Plugin.onHandleConfig(config);
+    _Plugin2.default.init(config.plugins);
+    _Plugin2.default.onStart();
+    config = _Plugin2.default.onHandleConfig(config);
 
     this._setDefaultConfig(config);
 
-    logger.debug = !!config.debug;
-    const includes = config.includes.map((v) => new RegExp(v));
-    const excludes = config.excludes.map((v) => new RegExp(v));
+    _colorLogger2.default.debug = !!config.debug;
+    const includes = config.includes.map(v => new RegExp(v));
+    const excludes = config.excludes.map(v => new RegExp(v));
 
     let packageName = null;
     let mainFilePath = null;
     if (config.package) {
       try {
-        const packageJSON = fs.readFileSync(config.package, {encode: 'utf8'});
+        const packageJSON = _fsExtra2.default.readFileSync(config.package, { encode: 'utf8' });
         const packageConfig = JSON.parse(packageJSON);
         packageName = packageConfig.name;
         mainFilePath = packageConfig.main;
@@ -54,10 +91,10 @@ export default class ESDoc {
 
     let results = [];
     const asts = [];
-    const sourceDirPath = path.resolve(config.source);
+    const sourceDirPath = _path2.default.resolve(config.source);
 
-    this._walk(config.source, excludes, (filePath)=>{
-      const relativeFilePath = path.relative(sourceDirPath, filePath);
+    this._walk(config.source, excludes, filePath => {
+      const relativeFilePath = _path2.default.relative(sourceDirPath, filePath);
       let match = false;
       for (const reg of includes) {
         if (relativeFilePath.match(reg)) {
@@ -76,7 +113,7 @@ export default class ESDoc {
       if (!temp) return;
       results.push(...temp.results);
       if (config.outputAST) {
-        asts.push({filePath: `source${path.sep}${relativeFilePath}`, ast: temp.ast});
+        asts.push({ filePath: `source${_path2.default.sep}${relativeFilePath}`, ast: temp.ast });
       }
     });
 
@@ -92,25 +129,25 @@ export default class ESDoc {
 
     results = this._resolveDuplication(results);
 
-    results = Plugin.onHandleDocs(results);
+    results = _Plugin2.default.onHandleDocs(results);
 
     // index.json
     {
-      const dumpPath = path.resolve(config.destination, 'index.json');
-      fs.outputFileSync(dumpPath, JSON.stringify(results, null, 2));
+      const dumpPath = _path2.default.resolve(config.destination, 'index.json');
+      _fsExtra2.default.outputFileSync(dumpPath, JSON.stringify(results, null, 2));
     }
 
     // ast, array will be empty if config.outputAST is false - resulting in skipping the loop
     for (const ast of asts) {
       const json = JSON.stringify(ast.ast, null, 2);
-      const filePath = path.resolve(config.destination, `ast/${ast.filePath}.json`);
-      fs.outputFileSync(filePath, json);
+      const filePath = _path2.default.resolve(config.destination, `ast/${ast.filePath}.json`);
+      _fsExtra2.default.outputFileSync(filePath, json);
     }
 
     // publish
     this._publish(config);
 
-    Plugin.onComplete();
+    _Plugin2.default.onComplete();
   }
 
   /**
@@ -121,22 +158,7 @@ export default class ESDoc {
   static _checkOldConfig(config) {
     let exit = false;
 
-    const keys = [
-      ['access', 'esdoc-standard-plugin'],
-      ['autoPrivate', 'esdoc-standard-plugin'],
-      ['unexportedIdentifier', 'esdoc-standard-plugin'],
-      ['undocumentIdentifier', 'esdoc-standard-plugin'],
-      ['builtinExternal', 'esdoc-standard-plugin'],
-      ['coverage', 'esdoc-standard-plugin'],
-      ['test', 'esdoc-standard-plugin'],
-      ['title', 'esdoc-standard-plugin'],
-      ['manual', 'esdoc-standard-plugin'],
-      ['lint', 'esdoc-standard-plugin'],
-      ['includeSource', 'esdoc-exclude-source-plugin'],
-      ['styles', 'esdoc-inject-style-plugin'],
-      ['scripts', 'esdoc-inject-script-plugin'],
-      ['experimentalProposal', 'esdoc-ecmascript-proposal-plugin']
-    ];
+    const keys = [['access', 'esdoc-standard-plugin'], ['autoPrivate', 'esdoc-standard-plugin'], ['unexportedIdentifier', 'esdoc-standard-plugin'], ['undocumentIdentifier', 'esdoc-standard-plugin'], ['builtinExternal', 'esdoc-standard-plugin'], ['coverage', 'esdoc-standard-plugin'], ['test', 'esdoc-standard-plugin'], ['title', 'esdoc-standard-plugin'], ['manual', 'esdoc-standard-plugin'], ['lint', 'esdoc-standard-plugin'], ['includeSource', 'esdoc-exclude-source-plugin'], ['styles', 'esdoc-inject-style-plugin'], ['scripts', 'esdoc-inject-script-plugin'], ['experimentalProposal', 'esdoc-ecmascript-proposal-plugin']];
 
     for (const [key, plugin] of keys) {
       if (key in config) {
@@ -173,16 +195,16 @@ export default class ESDoc {
    * @private
    */
   static _walk(dirPath, excludes, callback) {
-    const entries = fs.readdirSync(dirPath);
+    const entries = _fsExtra2.default.readdirSync(dirPath);
 
     for (const entry of entries) {
-      const entryPath = path.resolve(dirPath, entry);
+      const entryPath = _path2.default.resolve(dirPath, entry);
 
-      if (excludes.find((excludePattern) => {
+      if (excludes.find(excludePattern => {
         return entryPath.match(excludePattern);
       })) continue;
 
-      const stat = fs.statSync(entryPath);
+      const stat = _fsExtra2.default.statSync(entryPath);
 
       if (stat.isFile()) {
         callback(entryPath);
@@ -204,28 +226,28 @@ export default class ESDoc {
    * @private
    */
   static _traverse(inDirPath, filePath, packageName, mainFilePath) {
-    logger.i(`parsing: ${filePath}`);
+    _colorLogger2.default.i(`parsing: ${filePath}`);
     let ast;
     try {
-      ast = ESParser.parse(filePath);
+      ast = _ESParser2.default.parse(filePath);
     } catch (e) {
-      InvalidCodeLogger.showFile(filePath, e);
+      _InvalidCodeLogger2.default.showFile(filePath, e);
       return null;
     }
 
-    const pathResolver = new PathResolver(inDirPath, filePath, packageName, mainFilePath);
-    const factory = new DocFactory(ast, pathResolver);
+    const pathResolver = new _PathResolver2.default(inDirPath, filePath, packageName, mainFilePath);
+    const factory = new _DocFactory2.default(ast, pathResolver);
 
-    ASTUtil.traverse(ast, (node, parent)=>{
+    _ASTUtil2.default.traverse(ast, (node, parent) => {
       try {
         factory.push(node, parent);
       } catch (e) {
-        InvalidCodeLogger.show(filePath, node);
+        _InvalidCodeLogger2.default.show(filePath, node);
         throw e;
       }
     });
 
-    return {results: factory.results, ast: ast};
+    return { results: factory.results, ast: ast };
   }
 
   /**
@@ -237,8 +259,8 @@ export default class ESDoc {
   static _generateForIndex(config) {
     let indexContent = '';
 
-    if (fs.existsSync(config.index)) {
-      indexContent = fs.readFileSync(config.index, {encode: 'utf8'}).toString();
+    if (_fsExtra2.default.existsSync(config.index)) {
+      indexContent = _fsExtra2.default.readFileSync(config.index, { encode: 'utf8' }).toString();
     } else {
       console.log(`[31mwarning: ${config.index} is not found. Please check config.index.[0m`);
     }
@@ -246,7 +268,7 @@ export default class ESDoc {
     const tag = {
       kind: 'index',
       content: indexContent,
-      longname: path.resolve(config.index),
+      longname: _path2.default.resolve(config.index),
       name: config.index,
       static: true,
       access: 'public'
@@ -265,8 +287,8 @@ export default class ESDoc {
     let packageJSON = '';
     let packagePath = '';
     try {
-      packageJSON = fs.readFileSync(config.package, {encoding: 'utf-8'});
-      packagePath = path.resolve(config.package);
+      packageJSON = _fsExtra2.default.readFileSync(config.package, { encoding: 'utf-8' });
+      packagePath = _path2.default.resolve(config.package);
     } catch (e) {
       // ignore
     }
@@ -275,7 +297,7 @@ export default class ESDoc {
       kind: 'packageJSON',
       content: packageJSON,
       longname: packagePath,
-      name: path.basename(packagePath),
+      name: _path2.default.basename(packagePath),
       static: true,
       access: 'public'
     };
@@ -290,20 +312,20 @@ export default class ESDoc {
    * @private
    */
   static _resolveDuplication(docs) {
-    const memberDocs = docs.filter((doc) => doc.kind === 'member');
+    const memberDocs = docs.filter(doc => doc.kind === 'member');
     const removeIds = [];
 
     for (const memberDoc of memberDocs) {
       // member duplicate with getter/setter/method.
       // when it, remove member.
       // getter/setter/method are high priority.
-      const sameLongnameDoc = docs.find((doc) => doc.longname === memberDoc.longname && doc.kind !== 'member');
+      const sameLongnameDoc = docs.find(doc => doc.longname === memberDoc.longname && doc.kind !== 'member');
       if (sameLongnameDoc) {
         removeIds.push(memberDoc.__docId__);
         continue;
       }
 
-      const dup = docs.filter((doc) => doc.longname === memberDoc.longname && doc.kind === 'member');
+      const dup = docs.filter(doc => doc.longname === memberDoc.longname && doc.kind === 'member');
       if (dup.length > 1) {
         const ids = dup.map(v => v.__docId__);
         ids.sort((a, b) => {
@@ -314,7 +336,7 @@ export default class ESDoc {
       }
     }
 
-    return docs.filter((doc) => !removeIds.includes(doc.__docId__));
+    return docs.filter(doc => !removeIds.includes(doc.__docId__));
   }
 
   /**
@@ -324,29 +346,30 @@ export default class ESDoc {
    */
   static _publish(config) {
     try {
-      const write = (filePath, content, option) =>{
-        const _filePath = path.resolve(config.destination, filePath);
-        content = Plugin.onHandleContent(content, _filePath);
+      const write = (filePath, content, option) => {
+        const _filePath = _path2.default.resolve(config.destination, filePath);
+        content = _Plugin2.default.onHandleContent(content, _filePath);
 
         console.log(`output: ${_filePath}`);
-        fs.outputFileSync(_filePath, content, option);
+        _fsExtra2.default.outputFileSync(_filePath, content, option);
       };
 
       const copy = (srcPath, destPath) => {
-        const _destPath = path.resolve(config.destination, destPath);
+        const _destPath = _path2.default.resolve(config.destination, destPath);
         console.log(`output: ${_destPath}`);
-        fs.copySync(srcPath, _destPath);
+        _fsExtra2.default.copySync(srcPath, _destPath);
       };
 
-      const read = (filePath) => {
-        const _filePath = path.resolve(config.destination, filePath);
-        return fs.readFileSync(_filePath).toString();
+      const read = filePath => {
+        const _filePath = _path2.default.resolve(config.destination, filePath);
+        return _fsExtra2.default.readFileSync(_filePath).toString();
       };
 
-      Plugin.onPublish(write, copy, read);
+      _Plugin2.default.onPublish(write, copy, read);
     } catch (e) {
-      InvalidCodeLogger.showError(e);
+      _InvalidCodeLogger2.default.showError(e);
       process.exit(1);
     }
   }
 }
+exports.default = ESDoc;
